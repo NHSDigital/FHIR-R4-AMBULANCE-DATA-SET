@@ -1,0 +1,22 @@
+<Patient>
+  <meta>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+  </meta>
+  <identifier>
+    <!--this is the extended patient section for ## NHSNumberVerificationStatus ##-->
+    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+          <code value="NI" />
+          <display value="NoInformation" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <!--data item ## NHS Number ## -->
+    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+    <value value="9912003888" />
+  </identifier>
+  <!--data item ## Date of Birth ## -->
+  <birthDate value="1963-08-08" />
+</Patient>
