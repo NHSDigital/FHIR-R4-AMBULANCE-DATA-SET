@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="ADS-BundleType"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/ADS-BundleType"/>
+	<version value="1.0.0"/>
+	<name value="ADSBundleType"/>
+	<title value="ADS Bundle Type"/>
+	<status value="draft"/>
+	<date value="2020-11-03T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the ADS Bundle Type."/>
+	<copyright value="Copyright © 2020 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="mvp"/>
+		<display value="ADS FHIR Bundle - MVP items"/>
+	</concept>
+	<concept>
+		<code value="bundle-1"/>
+		<display value="ADS FHIR Bundle - Stage 2 Bundle 1 items"/>
+	</concept>
+	<concept>
+		<code value="bundle-2"/>
+		<display value="ADS FHIR Bundle - Stage 2 Bundle 2 items"/>
+	</concept>
+	<concept>
+		<code value="epr"/>
+		<display value="ADS FHIR Bundle - EPR items"/>
+	</concept>
+</CodeSystem>
