@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="ADS-ResponseCategoryType"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseCategoryType"/>
+	<version value="1.0.0"/>
+	<name value="ADS-ResponseCategoryType"/>
+	<title value="ADS-ResponseCategoryType"/>
+	<status value="draft"/>
+	<date value="2020-11-03T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A code to indicate the initial or final acuity categorisation."/>
+	<copyright value="Copyright © 2020 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="initial"/>
+		<display value="Initial Response Category"/>
+	</concept>
+	<concept>
+		<code value="reporting"/>
+		<display value="Reporting Response Category"/>
+	</concept>
+</CodeSystem>
