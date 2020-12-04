@@ -3,7 +3,7 @@
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Bundle" />
   <version value="1.0.0" />
   <name value="UKCoreADSBundle" />
-  <title value="UKCore ADS Bundle" />
+  <title value="UK Core ADS Bundle" />
   <status value="draft" />
   <date value="2020-12-04" />
   <publisher value="HL7 UK" />
