@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="ADS-Stage2Bundle1-Pathways-Triage-Disposition-Observation-Example"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation"/>
+	</meta>
+	<!-- FHIR mandatory status code. -->
+	<status value="final"/>
+	<!-- Code to indicate which ADS triage code is being represented in the value -->
+	<code>
+		<coding>
+			<system value="https://fhir.nhs.uk/CodeSystem/ADS-TriageCategory"/>
+			<code value="02"/>
+			<display value="Pathways Triage Disposition"/>
+		</coding>
+	</code>
+	<focus>
+		<reference value="Communication/ebdf312b-bfb8-4793-9066-268dd74a39b1"/>
+	</focus>
+	<!-- Pathways Triage Disposition -->
+	<valueCodeableConcept>
+		<coding>
+			<system value="https://fhir.nhs.uk/CodeSystem/ADS-Pathways-Triage-Disposition"/>
+			<code value="Dx012"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>
