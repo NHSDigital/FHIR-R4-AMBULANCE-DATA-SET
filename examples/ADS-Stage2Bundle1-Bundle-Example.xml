@@ -1,0 +1,480 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="ADS-Stage2Bundle1-Bundle-Example2"/>
+	<type value="collection"/>
+	<!--this is the Communication section -->
+	<!--holds details about the call-->
+	<entry>
+		<fullUrl value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Communication>
+				<!--the ## Time Dispatch Code Established ##-->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-dispatch-code-established"/>
+								<display value="Time Dispatch Code Established"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:36:30+00:00"/>
+					</extension>
+				</extension>
+				<!-- Reporting Response Category -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory">
+					<extension url="responseCategoryType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseCategoryType"/>
+								<code value="reporting"/>
+								<display value="Reporting Response Category"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="responseCategoryCode">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ResponseCategory"/>
+								<code value="C3"/>
+								<display value="Category 3"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AQIResponseTime">
+					<valueDuration>
+						<value value="48"/>
+						<unit value="second"/>
+						<system value="http://unitsofmeasure.org"/>
+					</valueDuration>
+				</extension>
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AQIIncidentFlag">
+					<valueBoolean value="true"/>
+				</extension>
+				<!--data item ## Call Identifier ## -->
+				<identifier>
+					<system value="http://RX8/Id/call-identifier"/>
+					<value value="b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+					<!--call dateTime-->
+					<period>
+						<start value="2020-06-29T14:55:37+00:00"/>
+					</period>
+				</identifier>
+				<!--this is the mandatory status code -->
+				<!--if the call was stopped, this would be "stopped" and a statusReason included-->
+				<status value="completed"/>
+				<!--the ##Reporting Response Category ## for the call-->
+				<category>
+					<coding>
+						<system value="http://fhir.nhs.uk/CodeSystem/ReportingResponseCategory"/>
+						<code value="C3"/>
+						<display value="Category 3"/>
+					</coding>
+				</category>
+				<category>
+					<coding>
+						<system value="http://fhir.nhs.uk/CodeSystem/TreatmentType"/>
+						<code value="03"/>
+						<display value="See and Conveyed"/>
+					</coding>
+				</category>
+				<!--these are the Encounters for the Patients within this incident -->
+				<!--this example has 3 Patient Encounters-->
+				<about>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</about>
+				<about>
+					<reference value="urn:uuid:9450d479-328c-4c3c-bf35-efb1d80bd576"/>
+				</about>
+				<about>
+					<reference value="urn:uuid:393c3471-3339-463f-b431-d4fa3f62c313"/>
+				</about>
+				<!--this is when the Communication was connected-->
+				<sent value="2020-06-29T15:34:55+00:00"/>
+				<!--this is the pointer to the organization section found below -->
+				<!-- ## submitting organisation ## -->
+				<sender>
+					<reference value="urn:uuid:fed005b8-9f5f-11ea-bb37-0242ac130002"/>
+				</sender>
+				<!--this is the pointer to the organization section found below -->
+				<!-- ## provider organisation ## -->
+				<recipient>
+					<reference value="urn:uuid:fed005b8-9f5f-11ea-bb37-0242ac130002"/>
+				</recipient>
+			</Communication>
+		</resource>
+	</entry>
+	<!--this is one of the encounters-->
+	<!--this encounter covers callsign YAS123 attending to NHS Number 9912003888, who is conveyed to RR807-->
+	<entry>
+		<fullUrl value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+		<resource>
+			<Encounter xmlns="http://hl7.org/fhir">
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
+				</meta>
+				<!-- Extension to carry details of the Time Arrived at Receiving Location -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DateAndTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-arrived-receiving-location"/>
+								<display value="Time Arrived at Receiving Location"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- Extension to carry details of the Time of Patient Handover -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DateAndTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-patient-handover"/>
+								<display value="Time of Patient Handover"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T17:06:03+00:00"/>
+					</extension>
+				</extension>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</identifier>
+				<status value="finished"/>
+				<!--this is the mandatory class code fixed as shown -->
+				<class>
+					<!--this is the mandatory specific type of encounter fixed as shown-->
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					<code value="AMBT"/>
+					<display value="Ambulance Transport"/>
+				</class>
+				<!--this is the pointer to the patient section found below -->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<period>
+					<!--## Time Allocated ##-->
+					<start value="2020-06-29T15:36:44+00:00"/>
+					<!--## Time clear-->
+					<end value="2020-06-29T18:56:44+00:00"/>
+				</period>
+				<hospitalization>
+					<!--this is the pointer to the (destination) location found below -->
+					<destination>
+						<reference value="urn:uuid:2003ffd2-9f42-11ea-bb37-0242ac130002"/>
+					</destination>
+				</hospitalization>
+				<!-- this is the resource that provided the care - i.e. the CallSign -->
+				<location>
+					<location>
+						<reference value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+					</location>
+					<physicalType>
+						<coding>
+							<code value="ve"/>
+							<system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+							<display value="Vehicle"/>
+						</coding>
+					</physicalType>
+				</location>
+			</Encounter>
+		</resource>
+	</entry>
+	<!--this is one of the encounters-->
+	<!--this encounter covers callsign YAS123 attending to NHS Number 2233445566, who is not conveyed-->
+	<entry>
+		<fullUrl value="urn:uuid:9450d479-328c-4c3c-bf35-efb1d80bd576"/>
+		<resource>
+			<Encounter xmlns="http://hl7.org/fhir">
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="9450d479-328c-4c3c-bf35-efb1d80bd576"/>
+				</identifier>
+				<status value="finished"/>
+				<!--this is the mandatory class code fixed as shown -->
+				<class>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					<code value="AMBT"/>
+					<display value="Ambulance Transport"/>
+				</class>
+				<!--this is the pointer to the patient section found below -->
+				<subject>
+					<reference value="urn:uuid:02bbfef1-39c3-4e3a-a4fc-4d48aec395b0"/>
+				</subject>
+				<period>
+					<!--## Time Allocated ##-->
+					<start value="2020-06-29T15:36:44+00:00"/>
+					<!--## Time clear-->
+					<end value="2020-06-30T15:36:44+00:00"/>
+				</period>
+				<!-- this is the resource that provided the care - i.e. the CallSign -->
+				<location>
+					<location>
+						<reference value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+					</location>
+					<physicalType>
+						<coding>
+							<code value="ve"/>
+							<system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+							<display value="Vehicle"/>
+						</coding>
+					</physicalType>
+				</location>
+			</Encounter>
+		</resource>
+	</entry>
+	<!--this is one of the encounters-->
+	<!--this encounter covers callsign YAS456 attending to NHS Number 9988776655, who is conveyed to RR807-->
+	<entry>
+		<fullUrl value="urn:uuid:393c3471-3339-463f-b431-d4fa3f62c313"/>
+		<resource>
+			<Encounter xmlns="http://hl7.org/fhir">
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
+				</meta>
+				<!-- Extension to carry details of the Time Arrived at Incident Location -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DateAndTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-arrived-receiving-location"/>
+								<display value="Time Arrived at Receiving Location"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T16:07:54+00:00"/>
+					</extension>
+				</extension>
+				<!-- Extension to carry details of the Time of Patient Handover -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DateAndTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-patient-handover"/>
+								<display value="Time of Patient Handover"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:06:03+00:00"/>
+					</extension>
+				</extension>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="393c3471-3339-463f-b431-d4fa3f62c313"/>
+				</identifier>
+				<status value="finished"/>
+				<!--this is the mandatory class code fixed as shown -->
+				<class>
+					<!--this is the mandatory specific type of encounter fixed as shown-->
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					<code value="AMBT"/>
+					<display value="ambulance transport"/>
+				</class>
+				<!--this is the pointer to the patient section found below -->
+				<subject>
+					<reference value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
+				</subject>
+				<period>
+					<!--## Time Allocated ##-->
+					<start value="2020-06-29T15:42:03+00:00"/>
+					<!--## Time clear-->
+					<end value="2020-06-29T18:01:06+00:00"/>
+				</period>
+				<hospitalization>
+					<!--this is the pointer to the (destination) location found below -->
+					<destination>
+						<reference value="urn:uuid:2003ffd2-9f42-11ea-bb37-0242ac130002"/>
+					</destination>
+				</hospitalization>
+				<!-- this is the resource that provided the care - i.e. the CallSign -->
+				<location>
+					<location>
+						<reference value="urn:uuid:f8f36dd8-c01c-4ea5-824d-7f53e98800dd"/>
+					</location>
+					<physicalType>
+						<coding>
+							<code value="ve"/>
+							<system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+							<display value="Vehicle"/>
+						</coding>
+					</physicalType>
+				</location>
+			</Encounter>
+		</resource>
+	</entry>
+	<!--this is a patient section -->
+	<entry>
+		<fullUrl value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Patient>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+				</meta>
+				<identifier>
+					<!--this is the extended patient section for ## NHSNumberVerificationStatus ##-->
+					<extension url="http://terminology.hl7.org/CodeSystem/v3-NullFlavor">
+						<valueCodeableConcept>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+								<code value="NI"/>
+								<display value="No Information"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<!--data item ## NHS Number ## -->
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9912003888"/>
+				</identifier>
+				<!--data item ## Date of Birth ## -->
+				<birthDate value="1963-08-08"/>
+			</Patient>
+		</resource>
+	</entry>
+	<!--this is a patient section -->
+	<entry>
+		<fullUrl value="urn:uuid:02bbfef1-39c3-4e3a-a4fc-4d48aec395b0"/>
+		<resource>
+			<Patient>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+				</meta>
+				<identifier>
+					<!--this is the extended patient section for ## NHSNumberVerificationStatus ##-->
+					<extension url="http://terminology.hl7.org/CodeSystem/v3-NullFlavor">
+						<valueCodeableConcept>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+								<code value="NI"/>
+								<display value="No Information"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<!--data item ## NHS Number ## -->
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="2233445566"/>
+				</identifier>
+				<!--data item ## Date of Birth ## -->
+				<birthDate value="1970-09-04"/>
+			</Patient>
+		</resource>
+	</entry>
+	<!--this is a patient section -->
+	<entry>
+		<fullUrl value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
+		<resource>
+			<Patient>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+				</meta>
+				<identifier>
+					<!--this is the extended patient section for ## NHSNumberVerificationStatus ##-->
+					<extension url="http://terminology.hl7.org/CodeSystem/v3-NullFlavor">
+						<valueCodeableConcept>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+								<code value="NI"/>
+								<display value="No Information"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<!--data item ## NHS Number ## -->
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9988776655"/>
+				</identifier>
+				<!--data item ## Date of Birth ## -->
+				<birthDate value="2002-12-08"/>
+			</Patient>
+		</resource>
+	</entry>
+	<!--the CallSign for YAS123-->
+	<entry>
+		<fullUrl value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+		<resource>
+			<!--the ambulance data -->
+			<Location>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
+				</meta>
+				<!--data item ## Call Sign ## -->
+				<identifier>
+					<system value="https://RX8/Id/call-sign"/>
+					<value value="YAS123"/>
+				</identifier>
+				<mode value="kind"/>
+			</Location>
+		</resource>
+	</entry>
+	<!--the CallSign for YAS456-->
+	<entry>
+		<fullUrl value="urn:uuid:f8f36dd8-c01c-4ea5-824d-7f53e98800dd"/>
+		<resource>
+			<!--the ambulance data -->
+			<Location>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
+				</meta>
+				<!--data item ## Call Sign ## -->
+				<identifier>
+					<system value="https://RX8/Id/call-sign"/>
+					<value value="YAS456"/>
+				</identifier>
+				<mode value="kind"/>
+			</Location>
+		</resource>
+	</entry>
+	<!--this is the(destination) location -->
+	<entry>
+		<fullUrl value="urn:uuid:2003ffd2-9f42-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Location>
+				<!--data item ## Conveying Destination Site Code ## -->
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<value value="RR807"/>
+				</identifier>
+				<type>
+					<coding>
+						<!--data item ## Conveying Destination Type - the code list is undecided ## -->
+						<system value="https://fhir.nhs.uk/CodeSystem/ConveyingDestinationType"/>
+						<code value="01"/>
+						<display value="Emergency department"/>
+					</coding>
+				</type>
+				<!-- do we need the owing organisation? -->
+			</Location>
+		</resource>
+	</entry>
+	<!--this is the Organization section for sender-->
+	<entry>
+		<fullUrl value="urn:uuid:fed005b8-9f5f-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Organization>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"/>
+				</meta>
+				<!--data item ## Submitting organisation code ## -->
+				<identifier>
+					<use value="official"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="RR8"/>
+				</identifier>
+			</Organization>
+		</resource>
+	</entry>
+</Bundle>

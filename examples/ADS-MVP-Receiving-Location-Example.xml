@@ -1,0 +1,19 @@
+<Location xmlns="http://hl7.org/fhir">
+	<id value="ADS-MVP-Receiving-Location-Example"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Receiving-Location"/>
+	</meta>
+	<!--data item ## Receiving Location Site Code ## -->
+	<identifier>
+		<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+		<value value="RR807"/>
+	</identifier>
+	<type>
+		<coding>
+			<!--Receiving Location Type -->
+			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ReceivingLocationCAD"/>
+			<code value="UCC"/>
+			<display value="Urgent Care Centre"/>
+		</coding>
+	</type>
+</Location>
