@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-Template"/>
-	<url value="https://fhir.nhs.uk/ValueSet/Ambulance-Template"/>
+	<id value="ADS-PathwaysTriageDisposition"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-PathwaysTriageDisposition"/>
 	<version value="1.0.0"/>
-	<name value="AmbulanceTemplate"/>
-	<title value="Ambulance Template"/>
+	<name value="ADSPathwaysTriageDisposition"/>
+	<title value="ADS Pathways Triage Disposition"/>
 	<status value="draft"/>
-	<date value="2020-11-03T00:00:00+00:00"/>
+	<date value="2020-12-09T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="NHS Digital"/>
@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/CodeSystem/"/>
+			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-PathwaysTriageDisposition"/>
 		</include>
 	</compose>
 </ValueSet>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-Template"/>
-	<url value="https://fhir.nhs.uk/ValueSet/Ambulance-Template"/>
+	<id value="ADS-SGCodeSymptomGroup"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-SGCodeSymptomGroup"/>
 	<version value="1.0.0"/>
-	<name value="AmbulanceTemplate"/>
-	<title value="Ambulance Template"/>
+	<name value="ADSSGCodeSymptomGroup"/>
+	<title value="ADS SG Code Symptom Group"/>
 	<status value="draft"/>
-	<date value="2020-11-03T00:00:00+00:00"/>
+	<date value="2020-12-09T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="NHS Digital"/>
@@ -16,7 +16,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="Codes to identify "/>
+	<description value="Codes to identify the SG Code (Symptom Group)."/>
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
