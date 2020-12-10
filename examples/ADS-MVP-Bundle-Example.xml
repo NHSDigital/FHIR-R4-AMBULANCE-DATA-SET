@@ -3,7 +3,7 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Bundle"/>
 		<tag>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-BundleType"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-BundleType"/>
 			<code value="mvp"/>
 			<display value="ADS FHIR Bundle - MVP items"/>
 		</tag>
@@ -38,7 +38,7 @@
 					<extension url="responseCategoryType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseCategoryType"/>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-ResponseCategoryType"/>
 								<code value="reporting"/>
 								<display value="Reporting Response Category"/>
 							</coding>
@@ -47,7 +47,7 @@
 					<extension url="responseCategoryCode">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ResponseCategory"/>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseCategory"/>
 								<code value="C3"/>
 								<display value="Category 3"/>
 							</coding>
@@ -84,7 +84,7 @@
 				<!--the ##Treatment Category ## for the call-->
 				<category>
 					<coding>
-						<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-TreatmentType"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-TreatmentType"/>
 						<code value="03"/>
 						<display value="See and Convey"/>
 					</coding>
@@ -463,7 +463,7 @@
 				<type>
 					<coding>
 						<!--Receiving Location Type -->
-						<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ReceivingLocationCAD"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ReceivingLocationCAD"/>
 						<code value="UCC"/>
 						<display value="Urgent Care Centre"/>
 					</coding>
