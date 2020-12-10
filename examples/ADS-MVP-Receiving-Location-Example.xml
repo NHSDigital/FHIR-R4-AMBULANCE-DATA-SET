@@ -11,7 +11,7 @@
 	<type>
 		<coding>
 			<!--Receiving Location Type -->
-			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ReceivingLocationCAD"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ReceivingLocationCAD"/>
 			<code value="UCC"/>
 			<display value="Urgent Care Centre"/>
 		</coding>

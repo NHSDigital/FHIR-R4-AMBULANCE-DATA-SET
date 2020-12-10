@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="ADS-BundleType"/>
-	<url value="https://fhir.nhs.uk/ValueSet/ADS-BundleType"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-BundleType"/>
 	<version value="1.0.0"/>
 	<name value="ADSBundleType"/>
 	<title value="ADS Bundle Type"/>
@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-BundleType"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-BundleType"/>
 		</include>
 	</compose>
 </ValueSet>

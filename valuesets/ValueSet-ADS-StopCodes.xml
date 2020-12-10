@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="ADS-StopCodes"/>
-	<url value="https://fhir.nhs.uk/ValueSet/ADS-StopCodes"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-StopCodes"/>
 	<version value="1.0.0"/>
 	<name value="ADSStopCodes"/>
 	<title value="ADS Stop Codes"/>
@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-StopCodes"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-StopCodes"/>
 		</include>
 	</compose>
 </ValueSet>
