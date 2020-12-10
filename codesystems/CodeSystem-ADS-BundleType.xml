@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="ADS-BundleType"/>
-	<url value="https://fhir.nhs.uk/CodeSystem/ADS-BundleType"/>
+	<url value="https://fhir.nhs.uk/R4/CodeSystem/ADS-BundleType"/>
 	<version value="1.0.0"/>
 	<name value="ADSBundleType"/>
 	<title value="ADS Bundle Type"/>
