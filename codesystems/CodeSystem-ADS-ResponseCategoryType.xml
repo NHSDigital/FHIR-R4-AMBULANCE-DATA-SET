@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="ADS-ResponseCategoryType"/>
-	<url value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseCategoryType"/>
+	<url value="https://fhir.nhs.uk/R4/CodeSystem/ADS-ResponseCategoryType"/>
 	<version value="1.0.0"/>
 	<name value="ADS-ResponseCategoryType"/>
 	<title value="ADS-ResponseCategoryType"/>
