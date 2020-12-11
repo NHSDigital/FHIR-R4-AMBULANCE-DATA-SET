@@ -411,7 +411,7 @@
 			</Patient>
 		</resource>
 	</entry>
-	<!--tAmbulance Response Vehicle for YAS123-->
+	<!--Ambulance Response Vehicle for YAS123-->
 	<entry>
 		<fullUrl value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
 		<resource>
