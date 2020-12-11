@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-TriageCategory"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
 		</include>
 	</compose>
 </ValueSet>

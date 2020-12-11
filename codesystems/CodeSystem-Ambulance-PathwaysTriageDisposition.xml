@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="Ambulance-PathwaysTriageDisposition" />
-  <url value="https://fhir.nhs.uk/CodeSystem/Ambulance-PathwaysTriageDisposition" />
+  <url value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-PathwaysTriageDisposition" />
   <version value="1.0.0" />
   <name value="AmbulancePathwaysTriageDisposition" />
   <title value="Ambulance Pathways Triage Disposition" />

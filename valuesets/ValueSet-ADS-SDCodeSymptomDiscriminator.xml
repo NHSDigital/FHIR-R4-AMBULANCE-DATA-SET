@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
 		</include>
 	</compose>
 </ValueSet>

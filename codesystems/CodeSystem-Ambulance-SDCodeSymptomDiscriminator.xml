@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="Ambulance-SDCodeSymptomDiscriminator"/>
-	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
+	<url value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
 	<version value="1.0.0"/>
 	<name value="AmbulanceSDCodeSymptomDiscriminator"/>
 	<title value="Ambulance SD Code Symptom Discriminator"/>
