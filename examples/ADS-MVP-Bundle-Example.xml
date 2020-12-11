@@ -64,7 +64,7 @@
 				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIIncidentFlag">
 					<valueCodeableConcept>
 						<coding>
-							<system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
 							<code value="Y"/>
 						</coding>
 					</valueCodeableConcept>
@@ -411,14 +411,14 @@
 			</Patient>
 		</resource>
 	</entry>
-	<!--the CallSign for YAS123-->
+	<!--Ambulance Response Vehicle for YAS123-->
 	<entry>
 		<fullUrl value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
 		<resource>
 			<!--the ambulance data -->
 			<Location>
 				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-CallSign-Location"/>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AmbulanceResponseVehicle-Location"/>
 				</meta>
 				<!--data item ## Call Sign ## -->
 				<identifier>
@@ -429,14 +429,14 @@
 			</Location>
 		</resource>
 	</entry>
-	<!--the CallSign for YAS456-->
+	<!-- Ambulance Response Vehicle YAS456-->
 	<entry>
 		<fullUrl value="urn:uuid:f8f36dd8-c01c-4ea5-824d-7f53e98800dd"/>
 		<resource>
 			<!--the ambulance data -->
 			<Location>
 				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-CallSign-Location"/>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AmbulanceResponseVehicle-Location"/>
 				</meta>
 				<!--data item ## Call Sign ## -->
 				<identifier>
