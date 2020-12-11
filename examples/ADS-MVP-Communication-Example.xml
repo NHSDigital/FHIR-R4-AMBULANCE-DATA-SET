@@ -49,7 +49,7 @@
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIIncidentFlag">
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
 				<code value="Y"/>
 			</coding>
 		</valueCodeableConcept>

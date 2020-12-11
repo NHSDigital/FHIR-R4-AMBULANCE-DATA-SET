@@ -198,11 +198,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
-      <binding>
-        <strength value="required" />
-        <description value="The initial or final acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategoryType" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -319,8 +314,8 @@
     </element>
     <element id="Extension.extension:responseCategoryType.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
+      <short value="A code to indicate this is the initial or final acuity categorisation" />
+      <definition value="A code to indicate this is the initial or final acuity categorisation" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -341,6 +336,11 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="The initial or final acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategoryType" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -391,11 +391,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
-      <binding>
-        <strength value="required" />
-        <description value="The acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategory" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -512,8 +507,8 @@
     </element>
     <element id="Extension.extension:responseCategoryCode.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
+      <short value="A code to identify the acuity categorisation" />
+      <definition value="A code to identify the acuity categorisation" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -534,6 +529,11 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="The acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategory" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -771,11 +771,6 @@
       <short value="A code to indicate this is the initial or final acuity categorisation" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="The initial or final acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategoryType" />
-      </binding>
     </element>
     <element id="Extension.extension:responseCategoryType.url">
       <path value="Extension.extension.url" />
@@ -783,10 +778,17 @@
     </element>
     <element id="Extension.extension:responseCategoryType.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="A code to indicate this is the initial or final acuity categorisation" />
+      <definition value="A code to indicate this is the initial or final acuity categorisation" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="The initial or final acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategoryType" />
+      </binding>
     </element>
     <element id="Extension.extension:responseCategoryCode">
       <path value="Extension.extension" />
@@ -794,11 +796,6 @@
       <short value="A code to identify the acuity categorisation" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="The acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategory" />
-      </binding>
     </element>
     <element id="Extension.extension:responseCategoryCode.url">
       <path value="Extension.extension.url" />
@@ -806,10 +803,17 @@
     </element>
     <element id="Extension.extension:responseCategoryCode.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="A code to identify the acuity categorisation" />
+      <definition value="A code to identify the acuity categorisation" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="The acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategory" />
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
