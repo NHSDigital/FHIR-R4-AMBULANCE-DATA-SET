@@ -369,6 +369,7 @@
 					</extension>
 					<!-- ## NHS Number (ADS59)##  -->
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9988776655"/>
 				</identifier>
 				<!-- ## Date of Birth (ADS55) ## -->
 				<birthDate value="1970-09-04"/>
