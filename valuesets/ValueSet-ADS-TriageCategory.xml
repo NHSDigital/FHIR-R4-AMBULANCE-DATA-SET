@@ -3,7 +3,7 @@
 	<id value="ADS-TriageCategory"/>
 	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-TriageCategory"/>
 	<version value="1.0.0"/>
-	<name value="ADS-TriageCategory"/>
+	<name value="ADSTriageCategory"/>
 	<title value="ADS-TriageCategory"/>
 	<status value="draft"/>
 	<date value="2020-12-09T00:00:00+00:00"/>
