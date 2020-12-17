@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/StructureDefinition/UKCore-ADS-AMPDSTriage-Observation" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AMPDSTriage-Observation" />
   <version value="1.0.0" />
   <name value="UKCoreADSAMPDSTriageObservation" />
   <title value="UKCore ADS AMPDS Triage Observation" />
