@@ -16,7 +16,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A CodeSystem to identify the SG Code (Symptom Group), populated with codes accessible to Ambulance Services through the NHS Futures Clinical Coding webpage." />
+  <description value="A CodeSystem to identify the SG Code (Symptom Group) of the condition following telephone triage by an ambulance service. It is populated with codes accessible to ambulance services through the NHS Futures Clinical Coding webpage." />
   <copyright value="Copyright © 2020 NHS Digital" />
   <caseSensitive value="true" />
 </CodeSystem>

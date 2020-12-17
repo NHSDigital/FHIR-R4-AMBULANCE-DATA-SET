@@ -16,7 +16,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="Codes to identify the SG Code (Symptom Group)."/>
+	<description value="Codes to identify the SG Code (Symptom Group) of the condition following telephone triage by an ambulance service."/>
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
