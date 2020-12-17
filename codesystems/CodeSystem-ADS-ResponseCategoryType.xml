@@ -4,7 +4,7 @@
 	<url value="https://fhir.nhs.uk/R4/CodeSystem/ADS-ResponseCategoryType"/>
 	<version value="1.0.0"/>
 	<name value="ADSResponseCategoryType"/>
-	<title value="ADS-ResponseCategoryType"/>
+	<title value="ADS Response Category Type"/>
 	<status value="draft"/>
 	<date value="2020-12-09T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
