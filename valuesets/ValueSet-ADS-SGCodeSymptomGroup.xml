@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="ADS-ResponseCategoryType"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategoryType"/>
+	<id value="ADS-SGCodeSymptomGroup"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-SGCodeSymptomGroup"/>
 	<version value="1.0.0"/>
-	<name value="ADSResponseCategoryType"/>
-	<title value="ADS Response Category"/>
+	<name value="ADSSGCodeSymptomGroup"/>
+	<title value="ADS SG Code Symptom Group"/>
 	<status value="draft"/>
 	<date value="2020-12-09T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
@@ -16,11 +16,11 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="A code to indicate the initial or final acuity categorisation."/>
+	<description value="Codes to identify the SG Code (Symptom Group) of the condition following telephone triage by an ambulance service."/>
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-ResponseCategoryType"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SGCodeSymptomGroup"/>
 		</include>
 	</compose>
 </ValueSet>
