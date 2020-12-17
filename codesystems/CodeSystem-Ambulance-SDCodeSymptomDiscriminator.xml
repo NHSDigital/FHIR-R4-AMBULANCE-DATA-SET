@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="Ambulance-SDCodeSymptomDiscriminator"/>
+	<url value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
+	<version value="1.0.0"/>
+	<name value="AmbulanceSDCodeSymptomDiscriminator"/>
+	<title value="Ambulance SD Code Symptom Discriminator"/>
+	<status value="draft"/>
+	<date value="2020-12-09T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the SD Code (Symptom Discriminator) of the condition following telephone triage by an ambulance service. It is populated with codes accessible to ambulance services through the NHS Futures Clinical Coding webpage."/>
+	<copyright value="Copyright © 2020 NHS Digital"/>
+	<caseSensitive value="true"/>
+</CodeSystem>
