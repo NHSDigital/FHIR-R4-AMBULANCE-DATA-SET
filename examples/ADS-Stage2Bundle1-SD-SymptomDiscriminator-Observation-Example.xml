@@ -1,14 +1,14 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="ADS-Stage2Bundle1-SD-SymptomDiscriminator-Observation-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation"/>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-SDSymptomDiscriminatorTriage-Observation"/>
 	</meta>
 	<!-- FHIR mandatory status code. -->
 	<status value="final"/>
 	<!-- Code to indicate which ADS triage code is being represented in the value -->
 	<code>
 		<coding>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-TriageCategory"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
 			<code value="04"/>
 			<display value="SD Code (Symptom Discriminator)"/>
 		</coding>
@@ -19,7 +19,7 @@
 	<!-- SD Code (Symptom Discriminator) -->
 	<valueCodeableConcept>
 		<coding>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-SD-Code-SymptomDiscriminator"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
 			<code value="SD4018"/>
 			<display value="AMB severe pain"/>
 		</coding>

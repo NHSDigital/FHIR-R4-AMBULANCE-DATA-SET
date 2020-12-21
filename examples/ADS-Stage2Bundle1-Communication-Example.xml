@@ -1,9 +1,9 @@
 <Communication xmlns="http://hl7.org/fhir">
 	<id value="ADS-Stage2Bundle1-Communication-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Communication"/>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication"/>
 	</meta>
-	<!-- Time Dispatch Code Established -->
+	<!-- ## Time Dispatch Code Established ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -17,8 +17,29 @@
 		<extension url="dateTime">
 			<valueDateTime value="2020-06-29T15:36:30+00:00"/>
 		</extension>
+	<!-- ## Reporting Response Category ## -->
+	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory">
+		<extension url="responseCategoryType">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-ResponseCategoryType"/>
+					<code value="reporting"/>
+					<display value="Reporting Response Category"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<extension url="responseCategoryCode">
+			<valueCodeableConcept>
+				<coding>
+					<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseCategory"/>
+					<code value="C3"/>
+					<display value="Category 3"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
 	</extension>
-	<!-- Clock Start Date Time -->
+	</extension>
+	<!-- ## Clock Start Date Time ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -33,7 +54,7 @@
 			<valueDateTime value="2020-06-29T15:34:55+00:00"/>
 		</extension>
 	</extension>
-	<!-- Time Call Answered -->
+	<!-- ## Time Call Answered ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -48,7 +69,7 @@
 			<valueDateTime value="2020-06-29T15:35:00+00:00"/>
 		</extension>
 	</extension>
-	<!-- Time Call Ended -->
+	<!-- ## Time Call Ended ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -63,7 +84,7 @@
 			<valueDateTime value="2020-06-29T15:40:00+00:00"/>
 		</extension>
 	</extension>
-	<!-- Clock Stop Date Time -->
+	<!-- ## Clock Stop Date Time ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -78,7 +99,7 @@
 			<valueDateTime value="2020-06-29T15:55:32+00:00"/>
 		</extension>
 	</extension>
-	<!-- AQI Response Time -->
+	<!-- ## AQI Response Time ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIResponseTime">
 		<valueDuration>
 			<value value="48"/>
@@ -86,47 +107,36 @@
 			<system value="http://unitsofmeasure.org"/>
 		</valueDuration>
 	</extension>
-	<!-- AQI Incident Flag -->
+	<!-- ## AQI Incident Flag ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIIncidentFlag">
-		<valueBoolean value="true"/>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+				<code value="Y"/>
+			</coding>
+		</valueCodeableConcept>
 	</extension>
-	<!-- 111 Flag -->
+	<!-- ## 111 Flag ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-111Flag">
-		<valueBoolean value="false"/>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+				<code value="N"/>
+			</coding>
+		</valueCodeableConcept>
 	</extension>
-	<!-- Reporting Response Category -->
-	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory">
-		<extension url="responseCategoryType">
-			<valueCodeableConcept>
-				<coding>
-					<system value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseCategoryType"/>
-					<code value="reporting"/>
-					<display value="Reporting Response Category"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-		<extension url="responseCategoryCode">
-			<valueCodeableConcept>
-				<coding>
-					<system value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseCategory"/>
-					<code value="C3"/>
-					<display value="Category 3"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
-	<!-- Call Identifier -->
+	<!-- ## Call Identifier ## -->
 	<identifier>
 		<system value="http://RX8/Id/call-identifier"/>
 		<value value="6d609f3e-93fc-43f1-8828-9885a28616d8"/>
-		<!-- Call Date -->
+	<!-- ## Call Date ## -->
 		<period>
 			<start value="2020-06-29T14:55:37+00:00"/>
 		</period>
 	</identifier>
-	<!-- FHIR mandatory status code. If the call was stopped, this would be "stopped" and a statusReason included -->
+	<!-- ## FHIR mandatory status code. If the call was stopped, this would be "stopped" and a statusReason included ## -->
 	<status value="completed"/>
-	<!-- Treatment Type -->
+	<!-- ## Treatment Type ## -->
 	<category>
 		<coding>
 			<system value="https://fhir.nhs.uk/CodeSystem/ADS-TreatmentType"/>
@@ -134,13 +144,13 @@
 			<display value="See and Convey"/>
 		</coding>
 	</category>
-	<!-- Time Call Connected -->
+	<!-- ## Time Call Connected ## -->
 	<sent value="2020-06-29T15:34:55+00:00"/>
-	<!-- Provider Organisation Code -->
+	<!-- ## Provider Organisation Code ## -->
 	<recipient>
 		<reference value="Organization/fed005b8-9f5f-11ea-bb37-0242ac130002"/>
 	</recipient>
-	<!-- Submitting Organisation Code -->
+	<!-- ## Submitting Organisation Code ## -->
 	<sender>
 		<reference value="Organization/fed005b8-9f5f-11ea-bb37-0242ac130002"/>
 	</sender>

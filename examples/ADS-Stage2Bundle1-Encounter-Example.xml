@@ -1,9 +1,9 @@
 <Encounter xmlns="http://hl7.org/fhir">
 	<id value="ADS-Stage2Bundle1-Encounter-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 	</meta>
-	<!-- Time Resource Mobilised -->
+	<!-- ## Time Resource Mobilised ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -18,7 +18,7 @@
 			<valueDateTime value="2020-06-29T15:00:32+00:00"/>
 		</extension>
 	</extension>
-	<!-- Time Resource Arrived On Scene -->
+	<!-- ## Time Resource Arrived On Scene ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -33,7 +33,7 @@
 			<valueDateTime value="2020-06-29T15:10:03+00:00"/>
 		</extension>
 	</extension>
-	<!-- Time Resource Left Scene -->
+	<!-- ## Time Resource Left Scene ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -48,7 +48,7 @@
 			<valueDateTime value="2020-06-29T15:45:03+00:00"/>
 		</extension>
 	</extension>
-	<!-- Time Arrived at Receiving Location -->
+	<!-- ## Time Arrived at Receiving Location ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -63,14 +63,14 @@
 			<valueDateTime value="2020-06-29T15:55:32+00:00"/>
 		</extension>
 	</extension>
-	<!-- Time of Patient Handover -->
+	<!-- ## Time of Patient Handover ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
 				<coding>
 					<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
 					<code value="time-patient-handover"/>
-					<display value="Time of Patient Handover"/>
+					<display value="Time Patient Handover"/>
 				</coding>
 			</valueCodeableConcept>
 		</extension>
@@ -82,15 +82,15 @@
 		<system value="https://tools.ietf.org/html/rfc4122"/>
 		<value value="ab8b74cc-a868-49f8-8b79-13a54362d453"/>
 	</identifier>
-	<!-- FHIR mandatory status code -->
+	<!-- ## FHIR mandatory status code ## -->
 	<status value="finished"/>
-	<!-- FHIR mandatory class code -->
+	<!-- ## FHIR mandatory class code ## -->
 	<class>
 		<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
 		<code value="AMBT"/>
 		<display value="Ambulance Transport"/>
 	</class>
-	<!-- FHIR reference to Patient resource -->
+	<!-- ## FHIR reference to Patient resource ## -->
 	<subject>
 		<reference value="Patient/b6256eda-a021-11ea-bb37-0242ac130002"/>
 	</subject>
@@ -98,18 +98,18 @@
 		<reference value="ServiceRequest/84ef87bf-02b7-4603-aac4-f7f0105df7f1"/>
 	</basedOn>
 	<period>
-		<!-- Time Resource Allocated -->
+		<!-- ## Time Resource Allocated ## -->
 		<start value="2020-06-29T15:36:44+00:00"/>
-		<!-- Time Clear -->
+		<!-- ## Time Clear ## -->
 		<end value="2020-06-29T18:56:44+00:00"/>
 	</period>
 	<hospitalization>
-		<!-- FHIR reference to Receiving Location resource -->
+		<!-- ## FHIR reference to Receiving Location resource ## -->
 		<destination>
 			<reference value="Location/81d5e3ff-5c53-4628-bef2-65afdfe87a46"/>
 		</destination>
 	</hospitalization>
-	<!-- FHIR reference Ambulance Response Vehicle Location resource  -->
+	<!-- ## FHIR reference Ambulance Response Vehicle Location resource ## -->
 	<location>
 		<location>
 			<reference value="Location/50d84f82-1c0b-4475-97cc-c7dc13e18ad6"/>

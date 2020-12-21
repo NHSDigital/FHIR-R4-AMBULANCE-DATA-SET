@@ -1,14 +1,14 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="ADS-Stage2Bundle1-SG-SymptomGroup-Observation-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation"/>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-SGSymptomGroupTriage-Observation"/>
 	</meta>
 	<!-- FHIR mandatory status code. -->
 	<status value="final"/>
 	<!-- Code to indicate which ADS triage code is being represented in the value -->
 	<code>
 		<coding>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-TriageCategory"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
 			<code value="03"/>
 			<display value="SG Code (Symptom Group)"/>
 		</coding>
@@ -16,10 +16,10 @@
 	<focus>
 		<reference value="Communication/ebdf312b-bfb8-4793-9066-268dd74a39b1"/>
 	</focus>
-	<!-- SG Code (Symptom Group) -->
+	<!-- ## (ADS18) SG Code (Symptom Group) ## -->
 	<valueCodeableConcept>
 		<coding>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-SG-Code-SymptomGroup"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SGCodeSymptomGroup"/>
 			<code value="SG1000"/>
 			<display value="Abdominal or Flank Injury, Blunt"/>
 		</coding>

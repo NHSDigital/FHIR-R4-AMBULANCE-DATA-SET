@@ -1,7 +1,7 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
 	<id value="ADS-Stage2Bundle1-ServiceRequest-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest"/>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-ServiceRequest"/>
 	</meta>
 	<status value="completed"/>
 	<intent value="order"/>
