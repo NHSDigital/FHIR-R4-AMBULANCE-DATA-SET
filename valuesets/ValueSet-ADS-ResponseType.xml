@@ -16,7 +16,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="Codes to identify the type of response that is allocated to a call e.g. an ambulance or a rapid response vehicle for a face to face response. "/>
+	<description value="Codes to identify the type of response that is allocated to a call. "/>
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>

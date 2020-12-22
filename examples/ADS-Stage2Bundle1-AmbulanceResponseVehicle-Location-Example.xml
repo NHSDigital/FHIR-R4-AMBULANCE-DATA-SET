@@ -1,18 +1,18 @@
 <Location xmlns="http://hl7.org/fhir">
 	<id value="ADS-Stage2Bundle1-AmbulanceResponseVehicle-Location-Example"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AmbulanceResponseVehicle-Location"/>
 	</meta>
-	<!-- Call Sign -->
+	<!-- ## Call Sign (ADS36)  ## -->
 	<identifier>
 		<system value="https://RX8/Id/call-sign"/>
 		<value value="YAS123"/>
 	</identifier>
 	<mode value="kind"/>
-	<!-- Response Type -->
+	<!-- ## Response Type (ADS34) ## -->
 	<type>
 		<coding>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseType"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseType"/>
 			<code value="01"/>
 			<display value="DCA: Double Crewed Ambulance (Emergency)"/>
 		</coding>
