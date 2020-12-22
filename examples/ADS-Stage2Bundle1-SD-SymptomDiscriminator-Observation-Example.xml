@@ -16,7 +16,7 @@
 	<focus>
 		<reference value="Communication/ebdf312b-bfb8-4793-9066-268dd74a39b1"/>
 	</focus>
-	<!-- SD Code (Symptom Discriminator) -->
+	<!-- ## SD Code (Symptom Discriminator) (ADS19) ## -->
 	<valueCodeableConcept>
 		<coding>
 			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>

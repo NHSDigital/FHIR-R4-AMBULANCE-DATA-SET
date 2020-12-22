@@ -3,7 +3,7 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication"/>
 	</meta>
-	<!-- ## Time Dispatch Code Established ## -->
+	<!-- ## Time Dispatch Code Established (ADS21) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -17,7 +17,7 @@
 		<extension url="dateTime">
 			<valueDateTime value="2020-06-29T15:36:30+00:00"/>
 		</extension>
-	<!-- ## Reporting Response Category ## -->
+	<!-- ## Reporting Response Category (ADS20) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory">
 		<extension url="responseCategoryType">
 			<valueCodeableConcept>
@@ -39,7 +39,7 @@
 		</extension>
 	</extension>
 	</extension>
-	<!-- ## Clock Start Date Time ## -->
+	<!-- ## Clock Start Date Time (ADS9) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -54,7 +54,7 @@
 			<valueDateTime value="2020-06-29T15:34:55+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## Time Call Answered ## -->
+	<!-- ## Time Call Answered (ADS11) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -69,7 +69,7 @@
 			<valueDateTime value="2020-06-29T15:35:00+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## Time Call Ended ## -->
+	<!-- ## Time Call Ended (ADS24) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -84,7 +84,7 @@
 			<valueDateTime value="2020-06-29T15:40:00+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## Clock Stop Date Time ## -->
+	<!-- ## Clock Stop Date Time (ADS27) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -99,7 +99,7 @@
 			<valueDateTime value="2020-06-29T15:55:32+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## AQI Response Time ## -->
+	<!-- ## AQI Response Time (ADS26) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIResponseTime">
 		<valueDuration>
 			<value value="48"/>
@@ -107,7 +107,7 @@
 			<system value="http://unitsofmeasure.org"/>
 		</valueDuration>
 	</extension>
-	<!-- ## AQI Incident Flag ## -->
+	<!-- ## AQI Incident Flag (ADS8) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIIncidentFlag">
 		<valueCodeableConcept>
 			<coding>
@@ -116,7 +116,7 @@
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<!-- ## 111 Flag ## -->
+	<!-- ## 111 Flag (ADS7) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-111Flag">
 		<valueCodeableConcept>
 			<coding>
@@ -125,18 +125,18 @@
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<!-- ## Call Identifier ## -->
+	<!-- ## Call Identifier (ADS3) ## -->
 	<identifier>
 		<system value="http://RX8/Id/call-identifier"/>
 		<value value="6d609f3e-93fc-43f1-8828-9885a28616d8"/>
-	<!-- ## Call Date ## -->
+	<!-- ## Call Date (ADS2A) ## -->
 		<period>
 			<start value="2020-06-29T14:55:37+00:00"/>
 		</period>
 	</identifier>
 	<!-- ## FHIR mandatory status code. If the call was stopped, this would be "stopped" and a statusReason included ## -->
 	<status value="completed"/>
-	<!-- ## Treatment Type ## -->
+	<!-- ## Treatment Type (ADS33) ## -->
 	<category>
 		<coding>
 			<system value="https://fhir.nhs.uk/CodeSystem/ADS-TreatmentType"/>
@@ -144,13 +144,13 @@
 			<display value="See and Convey"/>
 		</coding>
 	</category>
-	<!-- ## Time Call Connected ## -->
+	<!-- ## Time Call Connected (ADS10) ## -->
 	<sent value="2020-06-29T15:34:55+00:00"/>
-	<!-- ## Provider Organisation Code ## -->
+	<!-- ## Provider Organisation Code (ADS1) ## -->
 	<recipient>
 		<reference value="Organization/fed005b8-9f5f-11ea-bb37-0242ac130002"/>
 	</recipient>
-	<!-- ## Submitting Organisation Code ## -->
+	<!-- ## Submitting Organisation Code (ADS0) ## -->
 	<sender>
 		<reference value="Organization/fed005b8-9f5f-11ea-bb37-0242ac130002"/>
 	</sender>

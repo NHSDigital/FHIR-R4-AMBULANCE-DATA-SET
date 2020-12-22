@@ -3,13 +3,13 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AmbulanceResponseVehicle-Location"/>
 	</meta>
-	<!-- Call Sign -->
+	<!-- ## Call Sign (ADS36)  ## -->
 	<identifier>
 		<system value="https://RX8/Id/call-sign"/>
 		<value value="YAS123"/>
 	</identifier>
 	<mode value="kind"/>
-	<!-- Response Type -->
+	<!-- ## Response Type (ADS34) ## -->
 	<type>
 		<coding>
 			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseType"/>

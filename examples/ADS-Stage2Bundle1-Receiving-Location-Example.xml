@@ -3,14 +3,14 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Receiving-Location"/>
 	</meta>
-	<!-- Receiving Destination Site Code ## -->
+	<!-- ## Receiving Destination Site Code (ADS94A) ## -->
 	<identifier>
 		<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 		<value value="RR807"/>
 	</identifier>
 	<type>
 		<coding>
-			<!-- ## Receiving Location Type ## -->
+			<!-- ## Receiving Location Type (ADS93A) ## -->
 			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ReceivingLocationCAD"/>
 			<code value="UCC"/>
 			<display value="Urgent Care Centre"/>

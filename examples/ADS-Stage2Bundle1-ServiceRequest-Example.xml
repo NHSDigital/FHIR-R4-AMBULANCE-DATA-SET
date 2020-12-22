@@ -5,12 +5,15 @@
 	</meta>
 	<status value="completed"/>
 	<intent value="order"/>
+	<!-- Reference to incident location -->
 	<subject>
 		<reference value="Location/b83db9ee-a956-407f-8723-11e3f519e7eb"/>
 	</subject>
+	<!-- Reference to Ambulance Response Vehicle(s) -->
 	<locationReference>
 		<reference value="Location/50d84f82-1c0b-4475-97cc-c7dc13e18ad6"/>
 	</locationReference>
+	<!-- Reference to originating call -->
 	<supportingInfo>
 		<reference value="Communication/113f17fa-3fc4-4364-9143-9061e4234394"/>
 	</supportingInfo>

@@ -3,7 +3,7 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 	</meta>
-	<!-- ## Time Resource Mobilised ## -->
+	<!-- ## Time Resource Mobilised (ADS39) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -18,7 +18,7 @@
 			<valueDateTime value="2020-06-29T15:00:32+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## Time Resource Arrived On Scene ## -->
+	<!-- ## Time Resource Arrived On Scene (ADS40) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -33,7 +33,7 @@
 			<valueDateTime value="2020-06-29T15:10:03+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## Time Resource Left Scene ## -->
+	<!-- ## Time Resource Left Scene (ADS42) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -48,7 +48,7 @@
 			<valueDateTime value="2020-06-29T15:45:03+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## Time Arrived at Receiving Location ## -->
+	<!-- ## Time Arrived at Receiving Location (ADS43) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -63,7 +63,7 @@
 			<valueDateTime value="2020-06-29T15:55:32+00:00"/>
 		</extension>
 	</extension>
-	<!-- ## Time of Patient Handover ## -->
+	<!-- ## Time of Patient Handover (ADS44) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 		<extension url="dateTimeType">
 			<valueCodeableConcept>
@@ -98,9 +98,9 @@
 		<reference value="ServiceRequest/84ef87bf-02b7-4603-aac4-f7f0105df7f1"/>
 	</basedOn>
 	<period>
-		<!-- ## Time Resource Allocated ## -->
+		<!-- ## Time Resource Allocated (ADS38) ## -->
 		<start value="2020-06-29T15:36:44+00:00"/>
-		<!-- ## Time Clear ## -->
+		<!-- ## Time Clear (ADS45) ## -->
 		<end value="2020-06-29T18:56:44+00:00"/>
 	</period>
 	<hospitalization>
