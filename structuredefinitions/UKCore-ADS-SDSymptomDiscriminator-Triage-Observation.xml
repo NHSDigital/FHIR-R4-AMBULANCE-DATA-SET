@@ -9889,6 +9889,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -40104,6 +40105,10 @@
         <description value="The triage observation" />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-TriageCategory" />
       </binding>
+    </element>
+    <element id="Observation.code.coding:aDStriageCategory.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
