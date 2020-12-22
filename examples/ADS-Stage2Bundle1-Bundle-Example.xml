@@ -91,15 +91,6 @@
 					</coding>
 				</category>
 				<!--These are the Encounters for the Patients within this incident. This example has 3 Patient Encounters. -->
-				<about>
-					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
-				</about>
-				<about>
-					<reference value="urn:uuid:9450d479-328c-4c3c-bf35-efb1d80bd576"/>
-				</about>
-				<about>
-					<reference value="urn:uuid:393c3471-3339-463f-b431-d4fa3f62c313"/>
-				</about>
 				<!-- ## Time Call Connected (ADS10) ## -->
 				<sent value="2020-06-29T15:34:55+00:00"/>
 				<!-- Reference to Provider Organization. -->
@@ -162,6 +153,37 @@
 					</identifier>
 				</managingOrganization>
 			</Location>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d87bc2ec-bd8e-4443-b41f-59b4a978a1f3"/>
+		<resource>
+			<Observation>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AMPDSTriage-Observation"/>
+				</meta>
+				<!-- FHIR mandatory status code. -->
+				<status value="final"/>
+				<!-- Code to indicate which ADS triage code is being represented in the value -->
+				<code>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<code value="01"/>
+						<display value="AMPDS Triage Disposition"/>
+					</coding>
+				</code>
+				<focus>
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!-- ## AMPDS Triage Disposition (ADS16) ## -->
+				<valueCodeableConcept>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-AMPDSTriageDisposition"/>
+						<code value="1A01"/>
+						<display value="Abdominal pain"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
 		</resource>
 	</entry>
 	<!-- First Encounter entry. This encounter covers callsign YAS123 attending to NHS Number 9912003888, who is conveyed to RR807. -->
