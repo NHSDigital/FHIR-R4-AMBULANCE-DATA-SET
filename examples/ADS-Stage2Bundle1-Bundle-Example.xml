@@ -90,7 +90,6 @@
 						<display value="See and Convey"/>
 					</coding>
 				</category>
-				<!--These are the Encounters for the Patients within this incident. This example has 3 Patient Encounters. -->
 				<!-- ## Time Call Connected (ADS10) ## -->
 				<sent value="2020-06-29T15:34:55+00:00"/>
 				<!-- Reference to Provider Organization. -->
