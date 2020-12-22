@@ -139,7 +139,7 @@
 	<!-- ## Treatment Type (ADS33) ## -->
 	<category>
 		<coding>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-TreatmentType"/>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-TreatmentType"/>
 			<code value="03"/>
 			<display value="See and Convey"/>
 		</coding>
