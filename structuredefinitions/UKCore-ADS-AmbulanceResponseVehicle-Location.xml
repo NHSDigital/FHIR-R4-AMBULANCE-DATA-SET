@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AmbulanceResponseVehicle-Location" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="UKCoreADSAmbulanceResponseVehicleLocation" />
   <title value="UK Core ADS Ambulance Response Vehicle Location" />
   <status value="draft" />
