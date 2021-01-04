@@ -17,6 +17,7 @@
 		<extension url="dateTime">
 			<valueDateTime value="2020-06-29T15:36:30+00:00"/>
 		</extension>
+	</extension>
 	<!-- ## Reporting Response Category (ADS20) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory">
 		<extension url="responseCategoryType">
@@ -37,7 +38,6 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-	</extension>
 	</extension>
 	<!-- ## Clock Start Date Time (ADS9) ## -->
 	<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
@@ -129,7 +129,7 @@
 	<identifier>
 		<system value="http://RX8/Id/call-identifier"/>
 		<value value="6d609f3e-93fc-43f1-8828-9885a28616d8"/>
-	<!-- ## Call Date (ADS2A) ## -->
+		<!-- ## Call Date (ADS2A) ## -->
 		<period>
 			<start value="2020-06-29T14:55:37+00:00"/>
 		</period>

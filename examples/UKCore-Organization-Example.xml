@@ -3,7 +3,8 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"/>
 	</meta>
-	<!--data item ## Submitting organisation code ## -->
+	<!-- ## Submitting Organisation Code (ADS0) ## -->
+	<!-- ## Provider Organisation Code (ADS1) ## -->
 	<identifier>
 		<use value="official"/>
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
