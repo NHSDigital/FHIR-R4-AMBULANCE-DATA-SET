@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="ADS-RespondingOrganizationType"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-RespondingOrganizationType"/>
+	<id value="ADS-RespondingOrganisationType"/>
+	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-RespondingOrganisationType"/>
 	<version value="1.0.0"/>
-	<name value="ADSRespondingOrganizationType"/>
-	<title value="ADS Responding Organization Type"/>
+	<name value="ADSRespondingOrganisationType"/>
+	<title value="ADS Responding Organisation Type"/>
 	<status value="draft"/>
 	<date value="2021-01-14T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
