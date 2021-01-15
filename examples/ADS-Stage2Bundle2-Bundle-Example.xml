@@ -647,7 +647,7 @@
 				<identifier>
 					<use value="official"/>
 					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-					<value value="RR8"/>
+					<value value="RX8"/>
 				</identifier>
 				<!-- ## Responding organisation type (ADS37) ## -->
 				<type>
