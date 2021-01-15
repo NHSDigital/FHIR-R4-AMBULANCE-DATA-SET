@@ -5,8 +5,8 @@
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Bundle"/>
 		<tag>
 			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-BundleType"/>
-			<code value="bundle-1"/>
-			<display value="ADS FHIR Bundle - Stage 2 Bundle 1 items"/>
+			<code value="bundle-2"/>
+			<display value="ADS FHIR Bundle - Stage 2 Bundle 2 items"/>
 		</tag>
 	</meta>
 	<type value="collection"/>
