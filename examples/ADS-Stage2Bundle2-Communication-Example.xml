@@ -1,4 +1,5 @@
-<Communication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Git/SchemasR4/communication.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<Communication xmlns="http://hl7.org/fhir">
 	<id value="ADS-Stage2Bundle2-Communication-Example"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication"/>
@@ -202,4 +203,12 @@
 	<sender>
 		<reference value="Organization/fed005b8-9f5f-11ea-bb37-0242ac130002"/>
 	</sender>
+	<!-- ## Chief Complaint (Call Triage Code) (ADS14) ## -->
+	<reasonCode>
+		<coding>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ChiefComplaint"/>
+			<code value="01"/>
+			<display value="Abdominal Pain"/>
+		</coding>
+	</reasonCode>
 </Communication>
