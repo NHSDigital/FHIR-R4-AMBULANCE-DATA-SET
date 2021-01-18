@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication" />
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="UKCoreADSCommunication" />
   <title value="UK Core ADS Communication" />
   <status value="draft" />
@@ -176,12 +176,6 @@
       </mapping>
     </element>
     <element id="Communication.implicitRules">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.implicitRules" />
       <short value="A set of rules under which this content was created" />
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc." />
@@ -214,12 +208,6 @@
       </mapping>
     </element>
     <element id="Communication.language">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.language" />
       <short value="Language of the resource content" />
       <definition value="The base language in which the resource is written." />
@@ -382,7 +370,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -433,7 +421,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -484,7 +472,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -535,7 +523,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -586,7 +574,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -637,7 +625,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -688,7 +676,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -739,7 +727,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -797,7 +785,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" />
@@ -826,6 +814,8 @@
       <max value="*" />
       <base>
         <path value="Communication.identifier" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Identifier" />
@@ -934,7 +924,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -946,12 +936,6 @@
       </mapping>
     </element>
     <element id="Communication.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -1069,12 +1053,6 @@
       </mapping>
     </element>
     <element id="Communication.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -1122,12 +1100,6 @@
       </mapping>
     </element>
     <element id="Communication.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -1209,7 +1181,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1299,12 +1271,6 @@
       </mapping>
     </element>
     <element id="Communication.instantiatesCanonical">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.instantiatesCanonical" />
       <short value="Instantiates FHIR protocol or definition" />
       <definition value="The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Communication." />
@@ -1313,6 +1279,8 @@
       <max value="*" />
       <base>
         <path value="Communication.instantiatesCanonical" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="canonical" />
@@ -1346,12 +1314,6 @@
       </mapping>
     </element>
     <element id="Communication.instantiatesUri">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.instantiatesUri" />
       <short value="Instantiates external protocol or definition" />
       <definition value="The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Communication." />
@@ -1360,6 +1322,8 @@
       <max value="*" />
       <base>
         <path value="Communication.instantiatesUri" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="uri" />
@@ -1403,6 +1367,8 @@
       <max value="*" />
       <base>
         <path value="Communication.basedOn" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Reference" />
@@ -1508,7 +1474,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1520,12 +1486,6 @@
       </mapping>
     </element>
     <element id="Communication.basedOn.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.basedOn.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -1561,12 +1521,6 @@
       </mapping>
     </element>
     <element id="Communication.basedOn.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.basedOn.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -1729,7 +1683,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1741,12 +1695,6 @@
       </mapping>
     </element>
     <element id="Communication.basedOn.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.basedOn.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -1864,12 +1812,6 @@
       </mapping>
     </element>
     <element id="Communication.basedOn.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.basedOn.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -1917,12 +1859,6 @@
       </mapping>
     </element>
     <element id="Communication.basedOn.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.basedOn.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -2004,7 +1940,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2094,12 +2030,6 @@
       </mapping>
     </element>
     <element id="Communication.basedOn.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2152,6 +2082,8 @@
       <max value="*" />
       <base>
         <path value="Communication.partOf" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Reference" />
@@ -2257,7 +2189,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2269,12 +2201,6 @@
       </mapping>
     </element>
     <element id="Communication.partOf.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.partOf.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -2310,12 +2236,6 @@
       </mapping>
     </element>
     <element id="Communication.partOf.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.partOf.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -2478,7 +2398,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2490,12 +2410,6 @@
       </mapping>
     </element>
     <element id="Communication.partOf.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.partOf.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -2613,12 +2527,6 @@
       </mapping>
     </element>
     <element id="Communication.partOf.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.partOf.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -2666,12 +2574,6 @@
       </mapping>
     </element>
     <element id="Communication.partOf.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.partOf.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -2753,7 +2655,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2843,12 +2745,6 @@
       </mapping>
     </element>
     <element id="Communication.partOf.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2900,6 +2796,8 @@
       <max value="*" />
       <base>
         <path value="Communication.inResponseTo" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Reference" />
@@ -3000,7 +2898,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3012,12 +2910,6 @@
       </mapping>
     </element>
     <element id="Communication.inResponseTo.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.inResponseTo.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -3053,12 +2945,6 @@
       </mapping>
     </element>
     <element id="Communication.inResponseTo.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.inResponseTo.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -3221,7 +3107,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3233,12 +3119,6 @@
       </mapping>
     </element>
     <element id="Communication.inResponseTo.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.inResponseTo.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -3356,12 +3236,6 @@
       </mapping>
     </element>
     <element id="Communication.inResponseTo.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.inResponseTo.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -3409,12 +3283,6 @@
       </mapping>
     </element>
     <element id="Communication.inResponseTo.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.inResponseTo.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -3496,7 +3364,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3586,12 +3454,6 @@
       </mapping>
     </element>
     <element id="Communication.inResponseTo.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3629,12 +3491,6 @@
       </mapping>
     </element>
     <element id="Communication.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.status" />
       <short value="preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown" />
       <definition value="The status of the transmission." />
@@ -3699,6 +3555,7 @@
       <max value="1" />
       <base>
         <path value="Communication.statusReason" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -3755,6 +3612,8 @@
       <max value="*" />
       <base>
         <path value="Communication.category" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="CodeableConcept" />
@@ -3795,12 +3654,6 @@
       </mapping>
     </element>
     <element id="Communication.priority">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.priority" />
       <short value="routine | urgent | asap | stat" />
       <definition value="Characterizes how quickly the planned or in progress communication must be addressed. Includes concepts such as stat, urgent, routine." />
@@ -3809,6 +3662,7 @@
       <max value="1" />
       <base>
         <path value="Communication.priority" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -3857,6 +3711,8 @@
       <max value="*" />
       <base>
         <path value="Communication.medium" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="CodeableConcept" />
@@ -3911,6 +3767,7 @@
       <max value="1" />
       <base>
         <path value="Communication.subject" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -4026,7 +3883,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4038,12 +3895,6 @@
       </mapping>
     </element>
     <element id="Communication.subject.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.subject.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -4079,12 +3930,6 @@
       </mapping>
     </element>
     <element id="Communication.subject.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.subject.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -4247,7 +4092,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4259,12 +4104,6 @@
       </mapping>
     </element>
     <element id="Communication.subject.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.subject.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -4382,12 +4221,6 @@
       </mapping>
     </element>
     <element id="Communication.subject.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.subject.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -4435,12 +4268,6 @@
       </mapping>
     </element>
     <element id="Communication.subject.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.subject.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -4522,7 +4349,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4612,12 +4439,6 @@
       </mapping>
     </element>
     <element id="Communication.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4669,6 +4490,7 @@
       <max value="1" />
       <base>
         <path value="Communication.topic" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -4727,6 +4549,8 @@
       <max value="*" />
       <base>
         <path value="Communication.about" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Reference" />
@@ -4831,7 +4655,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4843,12 +4667,6 @@
       </mapping>
     </element>
     <element id="Communication.about.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.about.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -4884,12 +4702,6 @@
       </mapping>
     </element>
     <element id="Communication.about.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.about.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -5052,7 +4864,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -5064,12 +4876,6 @@
       </mapping>
     </element>
     <element id="Communication.about.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.about.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -5187,12 +4993,6 @@
       </mapping>
     </element>
     <element id="Communication.about.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.about.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -5240,12 +5040,6 @@
       </mapping>
     </element>
     <element id="Communication.about.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.about.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -5327,7 +5121,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5417,12 +5211,6 @@
       </mapping>
     </element>
     <element id="Communication.about.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -5474,6 +5262,7 @@
       <max value="1" />
       <base>
         <path value="Communication.encounter" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -5584,7 +5373,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -5596,12 +5385,6 @@
       </mapping>
     </element>
     <element id="Communication.encounter.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.encounter.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -5637,12 +5420,6 @@
       </mapping>
     </element>
     <element id="Communication.encounter.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.encounter.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -5805,7 +5582,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -5817,12 +5594,6 @@
       </mapping>
     </element>
     <element id="Communication.encounter.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.encounter.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -5940,12 +5711,6 @@
       </mapping>
     </element>
     <element id="Communication.encounter.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.encounter.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -5993,12 +5758,6 @@
       </mapping>
     </element>
     <element id="Communication.encounter.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.encounter.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -6080,7 +5839,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6170,12 +5929,6 @@
       </mapping>
     </element>
     <element id="Communication.encounter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -6213,12 +5966,6 @@
       </mapping>
     </element>
     <element id="Communication.sent">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.sent" />
       <short value="When sent" />
       <definition value="The time when this communication was sent." />
@@ -6226,6 +5973,7 @@
       <max value="1" />
       <base>
         <path value="Communication.sent" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -6254,12 +6002,6 @@
       </mapping>
     </element>
     <element id="Communication.received">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.received" />
       <short value="When received" />
       <definition value="The time when this communication arrived at the destination." />
@@ -6267,6 +6009,7 @@
       <max value="1" />
       <base>
         <path value="Communication.received" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -6309,6 +6052,8 @@
       <max value="*" />
       <base>
         <path value="Communication.recipient" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Reference" />
@@ -6425,7 +6170,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -6437,12 +6182,6 @@
       </mapping>
     </element>
     <element id="Communication.recipient.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.recipient.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -6478,12 +6217,6 @@
       </mapping>
     </element>
     <element id="Communication.recipient.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.recipient.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -6646,7 +6379,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -6658,12 +6391,6 @@
       </mapping>
     </element>
     <element id="Communication.recipient.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.recipient.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -6781,12 +6508,6 @@
       </mapping>
     </element>
     <element id="Communication.recipient.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.recipient.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -6834,12 +6555,6 @@
       </mapping>
     </element>
     <element id="Communication.recipient.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.recipient.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -6921,7 +6636,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7011,12 +6726,6 @@
       </mapping>
     </element>
     <element id="Communication.recipient.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -7068,6 +6777,7 @@
       <max value="1" />
       <base>
         <path value="Communication.sender" />
+        <min value="0" />
         <max value="1" />
       </base>
       <type>
@@ -7183,7 +6893,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -7195,12 +6905,6 @@
       </mapping>
     </element>
     <element id="Communication.sender.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.sender.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -7236,12 +6940,6 @@
       </mapping>
     </element>
     <element id="Communication.sender.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.sender.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -7404,7 +7102,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -7416,12 +7114,6 @@
       </mapping>
     </element>
     <element id="Communication.sender.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.sender.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -7539,12 +7231,6 @@
       </mapping>
     </element>
     <element id="Communication.sender.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.sender.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -7592,12 +7278,6 @@
       </mapping>
     </element>
     <element id="Communication.sender.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.sender.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -7679,7 +7359,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7769,12 +7449,6 @@
       </mapping>
     </element>
     <element id="Communication.sender.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -7819,13 +7493,15 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Communication.reasonCode" />
-      <short value="Indication for message" />
+      <short value="The chief complaint identified for the call" />
       <definition value="The reason or justification for the communication." />
       <comment value="Textual reasons can be captured using reasonCode.text." />
       <min value="0" />
       <max value="*" />
       <base>
         <path value="Communication.reasonCode" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="CodeableConcept" />
@@ -7841,12 +7517,9 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationReason" />
-        </extension>
-        <strength value="example" />
-        <description value="Codes for describing reasons for the occurrence of a communication." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/clinical-findings" />
+        <strength value="required" />
+        <description value="The chief complaint identified for the call" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ChiefComplaint" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7892,6 +7565,8 @@
       <max value="*" />
       <base>
         <path value="Communication.reasonReference" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Reference" />
@@ -8008,7 +7683,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -8020,12 +7695,6 @@
       </mapping>
     </element>
     <element id="Communication.reasonReference.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.reasonReference.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -8061,12 +7730,6 @@
       </mapping>
     </element>
     <element id="Communication.reasonReference.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.reasonReference.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -8229,7 +7892,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -8241,12 +7904,6 @@
       </mapping>
     </element>
     <element id="Communication.reasonReference.identifier.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.reasonReference.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
       <definition value="The purpose of this identifier." />
@@ -8364,12 +8021,6 @@
       </mapping>
     </element>
     <element id="Communication.reasonReference.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.reasonReference.identifier.system" />
       <short value="The namespace for the identifier value" />
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." />
@@ -8417,12 +8068,6 @@
       </mapping>
     </element>
     <element id="Communication.reasonReference.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.reasonReference.identifier.value" />
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
@@ -8504,7 +8149,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8594,12 +8239,6 @@
       </mapping>
     </element>
     <element id="Communication.reasonReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -8650,6 +8289,8 @@
       <max value="*" />
       <base>
         <path value="Communication.payload" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="BackboneElement" />
@@ -8737,7 +8378,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -8788,7 +8429,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" />
@@ -8803,12 +8444,6 @@
       </mapping>
     </element>
     <element id="Communication.payload.content[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.payload.content[x]" />
       <short value="Message part content" />
       <definition value="A communicated content (or for multi-part communications, one portion of the communication)." />
@@ -8859,6 +8494,8 @@
       <max value="*" />
       <base>
         <path value="Communication.note" />
+        <min value="0" />
+        <max value="*" />
       </base>
       <type>
         <code value="Annotation" />
@@ -8958,7 +8595,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -9033,12 +8670,6 @@
       </mapping>
     </element>
     <element id="Communication.note.time">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.note.time" />
       <short value="When the annotation was made" />
       <definition value="Indicates when this particular annotation was made." />
@@ -9076,12 +8707,6 @@
       </mapping>
     </element>
     <element id="Communication.note.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Communication.note.text" />
       <short value="The annotation  - text content (as markdown)" />
       <definition value="The text of the annotation in markdown format." />
@@ -9210,6 +8835,15 @@
         <strength value="required" />
         <description value="Codes to identify the overall outcome of the call" />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-TreatmentType" />
+      </binding>
+    </element>
+    <element id="Communication.reasonCode">
+      <path value="Communication.reasonCode" />
+      <short value="The chief complaint identified for the call" />
+      <binding>
+        <strength value="required" />
+        <description value="The chief complaint identified for the call" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ChiefComplaint" />
       </binding>
     </element>
   </differential>
