@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-ADS-Cat1EarlyPrediction" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
   <version value="1.0.0" />
   <name value="ExtensionADSCat1EarlyPrediction" />
   <title value="Extension ADS Cat 1 Early Prediction" />
@@ -67,7 +67,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -147,7 +147,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -197,7 +197,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -277,7 +277,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -314,12 +314,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:cat1EarlyPredictionFlag.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Identifier for calls that were early identified as a Category 1 call" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -346,7 +340,7 @@
       <binding>
         <strength value="required" />
         <description value="Identifier for calls that were early identified as a Category 1 call" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-Cat1EarlyPredictionFlag" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-Cat1EarlyPredictionFlag" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -396,7 +390,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -476,7 +470,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -513,12 +507,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -570,19 +558,13 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -799,7 +781,7 @@
       <binding>
         <strength value="required" />
         <description value="Identifier for calls that were early identified as a Category 1 call" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-Cat1EarlyPredictionFlag" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-Cat1EarlyPredictionFlag" />
       </binding>
     </element>
     <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished">
@@ -821,7 +803,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

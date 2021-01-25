@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-ResponseCategory" />
   <version value="1.0.0" />
   <name value="ExtensionADSResponseCategory" />
   <title value="Extension ADS Response Category" />
@@ -339,7 +339,7 @@
       <binding>
         <strength value="required" />
         <description value="The initial or final acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategoryType" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-ResponseCategoryType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -532,7 +532,7 @@
       <binding>
         <strength value="required" />
         <description value="The acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategory" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-ResponseCategory" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -562,7 +562,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-ResponseCategory" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -787,7 +787,7 @@
       <binding>
         <strength value="required" />
         <description value="The initial or final acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategoryType" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-ResponseCategoryType" />
       </binding>
     </element>
     <element id="Extension.extension:responseCategoryCode">
@@ -812,12 +812,12 @@
       <binding>
         <strength value="required" />
         <description value="The acuity categorisation" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-ResponseCategory" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-ResponseCategory" />
       </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-ResponseCategory" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

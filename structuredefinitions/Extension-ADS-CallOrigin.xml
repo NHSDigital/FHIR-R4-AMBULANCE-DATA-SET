@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-ADS-CallOrigin" />
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-CallOrigin" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-CallOrigin" />
   <version value="1.0.0" />
   <name value="ExtensionADSCallOrigin" />
   <title value="Extension ADS Call Origin" />
@@ -67,7 +67,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -147,7 +147,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -177,19 +177,13 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-CallOrigin" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-CallOrigin" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -216,7 +210,7 @@
       <binding>
         <strength value="required" />
         <description value="The origin of the call into the ambulance control room" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-CallOrigin" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-CallOrigin" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -236,7 +230,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-CallOrigin" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-CallOrigin" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -247,7 +241,7 @@
       <binding>
         <strength value="required" />
         <description value="The origin of the call into the ambulance control room" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/ADS-CallOrigin" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-CallOrigin" />
       </binding>
     </element>
   </differential>
