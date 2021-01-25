@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="Ambulance-ReceivingLocationCAD"/>
-	<url value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ReceivingLocationCAD"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ReceivingLocationCAD"/>
 	<version value="1.0.0"/>
 	<name value="AmbulanceReceivingLocationCAD"/>
 	<title value="Ambulance Receiving Location CAD"/>
