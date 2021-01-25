@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="ADS-ClinicalSkillLevel"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-ClinicalSkillLevel"/>
+	<url value="https://fhir.nhs.uk/ValueSet/ADS-ClinicalSkillLevel"/>
 	<version value="1.0.0"/>
 	<name value="ADSClinicalSkillLevel"/>
 	<title value="ADS Clinical Skill Level"/>
@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ClinicalSkillLevel"/>
+			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ClinicalSkillLevel"/>
 		</include>
 	</compose>
 </ValueSet>

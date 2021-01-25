@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="ADS-Cat1EarlyPredictionFlag"/>
-	<url value="https://fhir.nhs.uk/R4/ValueSet/ADS-Cat1EarlyPredictionFlag"/>
+	<url value="https://fhir.nhs.uk/ValueSet/ADS-Cat1EarlyPredictionFlag"/>
 	<version value="1.0.0"/>
 	<name value="ADSCat1EarlyPredictionFlag"/>
 	<title value="ADS Cat 1 Early Prediction Flag"/>
@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-Cat1EarlyPredictionFlag"/>
+			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-Cat1EarlyPredictionFlag"/>
 		</include>
 	</compose>
 </ValueSet>
