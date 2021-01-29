@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="CodeSystem-ADS-TriageCategory" />
-  <url value="https://fhir.nhs.uk/CodeSystem/ADS-TriageCategory" />
-  <version value="1.0.0" />
-  <name value="ADSTriageCategory" />
-  <title value="ADS Triage Category" />
+  <id value="CodeSystem-AmbulanceDataSet-TriageCategory" />
+  <url value="https://fhir.nhs.uk/CodeSystem/AmbulanceDataSet-TriageCategory" />
+  <version value="2.0.0" />
+  <name value="AmbulanceDataSetTriageCategory" />
+  <title value="Ambulance Data Set Triage Category" />
   <status value="draft" />
-  <date value="2020-12-09T00:00:00+00:00" />
+  <date value="2021-12-26T00:00:00+00:00" />
   <publisher value="NHS Digital" />
   <contact>
     <name value="NHS Digital" />
