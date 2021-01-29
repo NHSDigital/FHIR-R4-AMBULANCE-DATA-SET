@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-ADS-Cat1EarlyPrediction" />
-  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
-  <version value="1.0.0" />
-  <name value="ExtensionADSCat1EarlyPrediction" />
-  <title value="Extension ADS Cat 1 Early Prediction" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-ResponseCategory" />
+  <version value="2.0.0" />
+  <name value="ExtensionAmbulanceDataSetResponseCategory" />
+  <title value="Extension ADS Response Category" />
   <status value="draft" />
-  <date value="2021-01-14" />
+  <date value="2021-01-26" />
   <publisher value="NHS Digital" />
   <contact>
     <name value="Interoperability Team" />
     <telecom>
       <system value="email" />
-      <value value="intreroperabilityteam@nhs.net" />
+      <value value="interoperabilityteam@nhs.net" />
       <use value="work" />
     </telecom>
   </contact>
-  <description value="The information about a Category 1 Early Prediction applied to a call." />
-  <purpose value="This extension extends the Communication resource to support the exchange of the information about a Category 1 Early Prediction applied to a call. This is currently not supported by the FHIR standard." />
-  <copyright value="Copyright © 2020 NHS Digital" />
+  <description value="A code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room, used for NHS England Ambulance Quality Indicator (AQI) reporting." />
+  <purpose value="This extension extends the Communication resource to support the exchange of a code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room.  This is currently not supported by the FHIR standard." />
+  <copyright value="Copyright © 2021 NHS Digital" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -43,8 +42,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="The information about a Category 1 Early Prediction applied to a call" />
-      <definition value="The information about a Category 1 Early Prediction applied to a call." />
+      <short value="A code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room" />
+      <definition value="A code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -158,7 +157,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag">
+    <element id="Extension.extension:responseCategoryType">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -166,13 +165,13 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.extension" />
-      <sliceName value="cat1EarlyPredictionFlag" />
-      <short value="Identifier for calls that were early identified as a Category 1 call" />
+      <sliceName value="responseCategoryType" />
+      <short value="A code to indicate this is the initial or final acuity categorisation" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -208,7 +207,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag.id">
+    <element id="Extension.extension:responseCategoryType.id">
       <path value="Extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -231,7 +230,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag.extension">
+    <element id="Extension.extension:responseCategoryType.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -288,7 +287,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag.url">
+    <element id="Extension.extension:responseCategoryType.url">
       <path value="Extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -307,16 +306,16 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="cat1EarlyPredictionFlag" />
+      <fixedUri value="responseCategoryType" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag.value[x]">
+    <element id="Extension.extension:responseCategoryType.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Identifier for calls that were early identified as a Category 1 call" />
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
+      <short value="A code to indicate this is the initial or final acuity categorisation" />
+      <definition value="A code to indicate this is the initial or final acuity categorisation" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -339,8 +338,8 @@
       </constraint>
       <binding>
         <strength value="required" />
-        <description value="Identifier for calls that were early identified as a Category 1 call" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-Cat1EarlyPredictionFlag" />
+        <description value="The initial or final acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ResponseCategoryType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -351,7 +350,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished">
+    <element id="Extension.extension:responseCategoryCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -359,13 +358,13 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.extension" />
-      <sliceName value="timeCat1EarlyPredictionFlagEstablished" />
-      <short value="The time that the category 1 was early identified (only applicable to category 1 incidents)" />
+      <sliceName value="responseCategoryCode" />
+      <short value="A code to identify the acuity categorisation" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -401,7 +400,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.id">
+    <element id="Extension.extension:responseCategoryCode.id">
       <path value="Extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -424,7 +423,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.extension">
+    <element id="Extension.extension:responseCategoryCode.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -481,7 +480,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.url">
+    <element id="Extension.extension:responseCategoryCode.url">
       <path value="Extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -500,16 +499,16 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="timeCat1EarlyPredictionFlagEstablished" />
+      <fixedUri value="responseCategoryCode" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.value[x]">
+    <element id="Extension.extension:responseCategoryCode.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
+      <short value="A code to identify the acuity categorisation" />
+      <definition value="A code to identify the acuity categorisation" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
@@ -519,7 +518,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="dateTime" />
+        <code value="CodeableConcept" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -530,6 +529,11 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="The acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ResponseCategory" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -558,7 +562,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-ResponseCategory" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -748,8 +752,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="The information about a Category 1 Early Prediction applied to a call" />
-      <definition value="The information about a Category 1 Early Prediction applied to a call." />
+      <short value="A code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room" />
+      <definition value="A code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -761,49 +765,59 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag">
+    <element id="Extension.extension:responseCategoryType">
       <path value="Extension.extension" />
-      <sliceName value="cat1EarlyPredictionFlag" />
-      <short value="Identifier for calls that were early identified as a Category 1 call" />
+      <sliceName value="responseCategoryType" />
+      <short value="A code to indicate this is the initial or final acuity categorisation" />
+      <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag.url">
+    <element id="Extension.extension:responseCategoryType.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="cat1EarlyPredictionFlag" />
+      <fixedUri value="responseCategoryType" />
     </element>
-    <element id="Extension.extension:cat1EarlyPredictionFlag.value[x]">
+    <element id="Extension.extension:responseCategoryType.value[x]">
       <path value="Extension.extension.value[x]" />
-      <short value="Identifier for calls that were early identified as a Category 1 call" />
+      <short value="A code to indicate this is the initial or final acuity categorisation" />
+      <definition value="A code to indicate this is the initial or final acuity categorisation" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
-        <description value="Identifier for calls that were early identified as a Category 1 call" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/ADS-Cat1EarlyPredictionFlag" />
+        <description value="The initial or final acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ResponseCategoryType" />
       </binding>
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished">
+    <element id="Extension.extension:responseCategoryCode">
       <path value="Extension.extension" />
-      <sliceName value="timeCat1EarlyPredictionFlagEstablished" />
-      <short value="The time that the category 1 was early identified (only applicable to category 1 incidents)" />
+      <sliceName value="responseCategoryCode" />
+      <short value="A code to identify the acuity categorisation" />
+      <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.url">
+    <element id="Extension.extension:responseCategoryCode.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="timeCat1EarlyPredictionFlagEstablished" />
+      <fixedUri value="responseCategoryCode" />
     </element>
-    <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.value[x]">
+    <element id="Extension.extension:responseCategoryCode.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="A code to identify the acuity categorisation" />
+      <definition value="A code to identify the acuity categorisation" />
       <min value="1" />
       <type>
-        <code value="dateTime" />
+        <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="The acuity categorisation" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ResponseCategory" />
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-ADS-Cat1EarlyPrediction" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-ResponseCategory" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
