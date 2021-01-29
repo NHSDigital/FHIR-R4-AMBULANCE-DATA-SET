@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="ADS-TreatmentType"/>
-	<url value="https://fhir.nhs.uk/ValueSet/ADS-TreatmentType"/>
-	<version value="1.0.0"/>
-	<name value="ADSTreatmentType"/>
-	<title value="ADS Treatment Type"/>
+	<id value="AmbulanceDataSet-TreatmentType"/>
+	<url value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-TreatmentType"/>
+	<version value="2.0.0"/>
+	<name value="AmbulanceDataSetTreatmentType"/>
+	<title value="Ambulance Data Set Treatment Type"/>
 	<status value="draft"/>
-	<date value="2020-12-09T00:00:00+00:00"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="NHS Digital"/>

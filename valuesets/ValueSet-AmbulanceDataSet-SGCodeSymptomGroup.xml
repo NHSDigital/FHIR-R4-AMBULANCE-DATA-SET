@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="ADS-SGCodeSymptomGroup"/>
-	<url value="https://fhir.nhs.uk/ValueSet/ADS-SGCodeSymptomGroup"/>
-	<version value="1.0.0"/>
-	<name value="ADSSGCodeSymptomGroup"/>
-	<title value="ADS SG Code Symptom Group"/>
+	<id value="AmbulanceDataSet-SGCodeSymptomGroup"/>
+	<url value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-SGCodeSymptomGroup"/>
+	<version value="2.0.0"/>
+	<name value="AmbulanceDataSetSGCodeSymptomGroup"/>
+	<title value="Ambulance Data Set SG Code Symptom Group"/>
 	<status value="draft"/>
-	<date value="2020-12-09T00:00:00+00:00"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="NHS Digital"/>

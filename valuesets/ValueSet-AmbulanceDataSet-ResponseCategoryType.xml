@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="ADS-ResponseCategoryType"/>
-	<url value="https://fhir.nhs.uk/ValueSet/ADS-ResponseCategoryType"/>
-	<version value="1.0.0"/>
-	<name value="ADSResponseCategoryType"/>
-	<title value="ADS Response Category Type"/>
+	<id value="AmbulanceDataSet-ResponseCategoryType"/>
+	<url value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ResponseCategoryType"/>
+	<version value="2.0.0"/>
+	<name value="AmbulanceDataSetResponseCategoryType"/>
+	<title value="Ambulance Data Set Response Category Type"/>
 	<status value="draft"/>
-	<date value="2020-12-09T00:00:00+00:00"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="NHS Digital"/>
@@ -20,7 +20,7 @@
 	<copyright value="Copyright © 2020 NHS Digital"/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/CodeSystem/ADS-ResponseCategoryType"/>
+			<system value="https://fhir.nhs.uk/CodeSystem/AmbulanceDataSet-ResponseCategoryType"/>
 		</include>
 	</compose>
 </ValueSet>

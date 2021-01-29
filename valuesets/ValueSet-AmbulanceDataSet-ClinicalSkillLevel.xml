@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="ADS-ClinicalSkillLevel"/>
-	<url value="https://fhir.nhs.uk/ValueSet/ADS-ClinicalSkillLevel"/>
-	<version value="1.0.0"/>
-	<name value="ADSClinicalSkillLevel"/>
-	<title value="ADS Clinical Skill Level"/>
+	<id value="AmbulanceDataSet-ClinicalSkillLevel"/>
+	<url value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ClinicalSkillLevel"/>
+	<version value="2.0.0"/>
+	<name value="AmbulanceDataSetClinicalSkillLevel"/>
+	<title value="Ambulance Data Set Clinical Skill Level"/>
 	<status value="draft"/>
-	<date value="2021-01-14T00:00:00+00:00"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="NHS Digital"/>

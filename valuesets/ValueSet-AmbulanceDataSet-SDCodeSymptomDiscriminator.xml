@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="ADS-SDCodeSymptomDiscriminator"/>
-	<url value="https://fhir.nhs.uk/ValueSet/ADS-SDCodeSymptomDiscriminator"/>
-	<version value="1.0.0"/>
-	<name value="ADSSDCodeSymptomDiscriminator"/>
-	<title value="ADS SD Code Symptom Discriminator"/>
+	<id value="AmbulanceDataSet-SDCodeSymptomDiscriminator"/>
+	<url value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-SDCodeSymptomDiscriminator"/>
+	<version value="2.0.0"/>
+	<name value="AmbulanceDataSetSDCodeSymptomDiscriminator"/>
+	<title value="Ambulance Data Set SD Code Symptom Discriminator"/>
 	<status value="draft"/>
-	<date value="2020-12-09T00:00:00+00:00"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="NHS Digital"/>
