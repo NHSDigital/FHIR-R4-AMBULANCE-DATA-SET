@@ -17,7 +17,7 @@
 		</telecom>
 	</contact>
 	<description value="Codes to identify the origin of the call into the ambulance control room, whether 999 was directly dialled or it was transferred from another agency."/>
-	<copyright value="Copyright © 2020 NHS Digital"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-CallOrigin"/>
