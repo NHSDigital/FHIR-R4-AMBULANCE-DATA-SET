@@ -17,7 +17,7 @@
 		</telecom>
 	</contact>
 	<description value="A CodeSystem to identify the type of response that is allocated to a call, e.g. an ambulance or a rapid response vehicle for a face to face response."/>
-	<copyright value="Copyright © 2020 NHS Digital"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
