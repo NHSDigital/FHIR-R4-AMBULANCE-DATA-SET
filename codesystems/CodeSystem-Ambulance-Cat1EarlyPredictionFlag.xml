@@ -17,7 +17,7 @@
 		</telecom>
 	</contact>
 	<description value="A CodeSystem to identify calls that were early identified as a Category 1 call."/>
-	<copyright value="Copyright © 2020 NHS Digital"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>

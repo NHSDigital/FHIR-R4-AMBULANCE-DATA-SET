@@ -17,7 +17,7 @@
 		</telecom>
 	</contact>
 	<description value="A CodeSystem to identify an acuity categorisation based on information given during triage by the ambulance control room."/>
-	<copyright value="Copyright © 2020 NHS Digital"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
