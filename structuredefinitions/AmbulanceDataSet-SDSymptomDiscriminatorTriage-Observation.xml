@@ -3,7 +3,7 @@
   <url value="https://fhir.nhs.uk/StructureDefinition/AmbulanceDataSet-SDSymptomDiscriminatorTriage-Observation" />
   <version value="2.0.0" />
   <name value="AmbulanceDataSetSDSymptomDiscriminatorTriageObservation" />
-  <title value="Ambulance Data Set Triage Observation" />
+  <title value="Ambulance Data Set SD Symptom Discriminator Triage Observation" />
   <status value="draft" />
   <date value="2021-01-26" />
   <publisher value="NHS Digital" />
