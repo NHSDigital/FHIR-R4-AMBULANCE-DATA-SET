@@ -881,7 +881,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -946,7 +946,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1271,7 +1271,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1616,7 +1616,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2432,7 +2432,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2999,7 +2999,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3064,7 +3064,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3162,7 +3162,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3721,7 +3721,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3786,7 +3786,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3859,8 +3859,8 @@
       <definition value="The request this encounter satisfies (e.g. incoming referral or procedure request)." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <alias value="incomingReferral" />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Encounter.basedOn" />
         <min value="0" />
@@ -3869,6 +3869,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/AmbulanceDataSet-ServiceRequest" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3885,7 +3886,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4439,7 +4440,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4504,7 +4505,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4850,7 +4851,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4912,7 +4913,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5475,7 +5476,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5540,7 +5541,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5638,7 +5639,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6197,7 +6198,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6262,7 +6263,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6334,7 +6335,7 @@
       <short value="The start and end time of the encounter" />
       <definition value="The start and end time of the encounter." />
       <comment value="If not (yet) known, the end of the Period may be omitted." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Encounter.period" />
@@ -6359,7 +6360,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -6388,6 +6389,165 @@
       <mapping>
         <identity value="rim" />
         <map value=".effectiveTime (low &amp; high)" />
+      </mapping>
+    </element>
+    <element id="Encounter.period.id">
+      <path value="Encounter.period.id" />
+      <representation value="xmlAttr" />
+      <short value="Unique id for inter-element referencing" />
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string" />
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Encounter.period.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Encounter.period.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Encounter.period.start">
+      <path value="Encounter.period.start" />
+      <short value="Starting time with inclusive boundary" />
+      <definition value="The start of the period. The boundary is inclusive." />
+      <comment value="If the low element is missing, the meaning is that the low boundary is not known." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Period.start" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <condition value="ele-1" />
+      <condition value="per-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="DR.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./low" />
+      </mapping>
+    </element>
+    <element id="Encounter.period.end">
+      <path value="Encounter.period.end" />
+      <short value="End time with inclusive boundary, if not ongoing" />
+      <definition value="The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
+      <comment value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Period.end" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <meaningWhenMissing value="If the end of the period is missing, it means that the period is ongoing" />
+      <condition value="ele-1" />
+      <condition value="per-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="DR.2" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./high" />
       </mapping>
     </element>
     <element id="Encounter.length">
@@ -6426,7 +6586,7 @@
         <human value="If a code for the unit is present, the system SHALL also be present" />
         <expression value="code.empty() or system.exists()" />
         <xpath value="not(exists(f:code)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <constraint>
         <key value="drt-1" />
@@ -6434,7 +6594,7 @@
         <human value="There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM." />
         <expression value="code.exists() implies ((system = %ucum) and value.exists())" />
         <xpath value="(f:code or not(f:value)) and (not(exists(f:system)) or f:system/@value='http://unitsofmeasure.org')" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Duration" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Encounter" />
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
@@ -6592,7 +6752,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7155,7 +7315,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7220,7 +7380,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7498,7 +7658,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8061,7 +8221,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8126,7 +8286,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8315,7 +8475,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -8865,7 +9025,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8930,7 +9090,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -9544,7 +9704,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -9609,7 +9769,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -9671,7 +9831,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -10221,7 +10381,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -10286,7 +10446,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -11232,6 +11392,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/AmbulanceDataSet-Receiving-Location" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11248,7 +11409,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -11802,7 +11963,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -11867,7 +12028,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -11999,7 +12160,7 @@
       <short value="List of locations where the patient has been" />
       <definition value="List of locations where  the patient has been during this encounter." />
       <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type &quot;kind&quot; such as &quot;client's home&quot; and an encounter.class = &quot;virtual&quot;." />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Encounter.location" />
@@ -12182,6 +12343,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/AmbulanceDataSet-AmbulanceResponseVehicle-Location" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12198,7 +12360,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -12760,7 +12922,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -12825,7 +12987,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -13018,7 +13180,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -13074,7 +13236,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -13632,7 +13794,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -13697,7 +13859,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -13798,7 +13960,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -14352,7 +14514,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -14417,7 +14579,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -14496,6 +14658,49 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime" />
+      </type>
+    </element>
+    <element id="Encounter.basedOn">
+      <path value="Encounter.basedOn" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/AmbulanceDataSet-ServiceRequest" />
+      </type>
+    </element>
+    <element id="Encounter.period">
+      <path value="Encounter.period" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.period.start">
+      <path value="Encounter.period.start" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.period.end">
+      <path value="Encounter.period.end" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.hospitalization.destination">
+      <path value="Encounter.hospitalization.destination" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/AmbulanceDataSet-Receiving-Location" />
+      </type>
+    </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.location.location">
+      <path value="Encounter.location.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/AmbulanceDataSet-AmbulanceResponseVehicle-Location" />
       </type>
     </element>
   </differential>

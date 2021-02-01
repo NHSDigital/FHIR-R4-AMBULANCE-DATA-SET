@@ -422,6 +422,312 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Communication.extension:aDSCat1EarlyPrediction">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.extension" />
+      <sliceName value="aDSCat1EarlyPrediction" />
+      <short value="The information about a Category 1 Early Prediction applied to a call" />
+      <definition value="The information about a Category 1 Early Prediction applied to a call." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-Cat1EarlyPrediction" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.extension:aDSCallOrigin">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.extension" />
+      <sliceName value="aDSCallOrigin" />
+      <short value="The origin of the call into the ambulance control room whether 999 was directly dialled or it was transferred from another agency" />
+      <definition value="The origin of the call into the ambulance control room whether 999 was directly dialled or it was transferred from another agency." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-CallOrigin" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.extension:aQIIncidentFlag">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.extension" />
+      <sliceName value="aQIIncidentFlag" />
+      <short value="AQI Incident Flag" />
+      <definition value="A flag applied to calls that should be counted within the NHSE Ambulance Quality Indicator (AQI) standard performance metrics." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-AQIIncidentFlag" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.extension:aDSResponseCategory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.extension" />
+      <sliceName value="aDSResponseCategory" />
+      <short value="A code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room" />
+      <definition value="A code to identify the initial or final acuity categorisation based on the early information given during triage by the ambulance control room." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="2" />
+      <max value="2" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-ResponseCategory" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.extension:aQIResponseTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.extension" />
+      <sliceName value="aQIResponseTime" />
+      <short value="The time duration it took to respond to the patient" />
+      <definition value="The time duration it took to respond to the patient based on the NHSE Ambulance Quality Indicator (AQI) standard performance definitions." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-AQIResponseTime" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.extension:111Flag">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.extension" />
+      <sliceName value="111Flag" />
+      <short value="A flag applied to for calls that were received from NHS 111, either by manual or automated transfer" />
+      <definition value="A flag applied to for calls that were received from NHS 111, either by manual or automated transfer." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-111Flag" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Communication.modifierExtension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -865,7 +1171,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -930,7 +1236,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1073,7 +1379,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1624,7 +1930,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1689,7 +1995,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1788,7 +2094,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2339,7 +2645,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2404,7 +2710,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2502,7 +2808,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3048,7 +3354,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3113,7 +3419,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3258,7 +3564,7 @@
       <binding>
         <strength value="required" />
         <description value="Codes for the reason why a call was stopped" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/communication-not-done-reason" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-StopCodes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3281,6 +3587,491 @@
         <map value="Event.statusReason" />
       </mapping>
     </element>
+    <element id="Communication.statusReason.id">
+      <path value="Communication.statusReason.id" />
+      <representation value="xmlAttr" />
+      <short value="Unique id for inter-element referencing" />
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string" />
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.statusReason.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.statusReason.coding" />
+      <short value="Code defined by a terminology system" />
+      <definition value="A reference to a code defined by a terminology system." />
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
+      <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="CodeableConcept.coding" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Coding" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CV" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.1-8, C*E.10-22" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="union(., ./translation)" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding.id">
+      <path value="Communication.statusReason.coding.id" />
+      <representation value="xmlAttr" />
+      <short value="Unique id for inter-element referencing" />
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string" />
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.statusReason.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding.system">
+      <path value="Communication.statusReason.coding.system" />
+      <short value="Identity of the terminology system" />
+      <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
+      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." />
+      <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.system" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-StopCodes" />
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.3" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystem" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding.version">
+      <path value="Communication.statusReason.coding.version" />
+      <short value="Version of the system - if relevant" />
+      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
+      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.version" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.7" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystemVersion" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding.code">
+      <path value="Communication.statusReason.coding.code" />
+      <short value="Symbol in syntax defined by the system" />
+      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
+      <requirements value="Need to refer to a particular code in the system." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.code" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./code" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Communication.statusReason.coding.display" />
+      <short value="Representation defined by the system" />
+      <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
+      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.display" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.2 - but note this is not well followed" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CV.displayName" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.coding.userSelected">
+      <path value="Communication.statusReason.coding.userSelected" />
+      <short value="If this coding was chosen directly by the user" />
+      <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
+      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
+      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.userSelected" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="boolean" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="Sometimes implied by being first" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CD.codingRationale" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
+      </mapping>
+    </element>
+    <element id="Communication.statusReason.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Communication.statusReason.text" />
+      <short value="Plain text representation of the concept" />
+      <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." />
+      <comment value="Very often the text is the same as a displayName of one of the codings." />
+      <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="CodeableConcept.text" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.9. But note many systems use C*E.2 for this" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./originalText[mediaType/code=&quot;text/plain&quot;]/data" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" />
+      </mapping>
+    </element>
     <element id="Communication.category">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -3292,7 +4083,7 @@
       <short value="Message category" />
       <definition value="The type of message conveyed such as alert, notification, reminder, instruction, etc." />
       <comment value="There may be multiple axes of categorization and one communication may serve multiple purposes." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Communication.category" />
@@ -3312,12 +4103,9 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationCategory" />
-        </extension>
-        <strength value="example" />
-        <description value="Codes for general categories of communications such as alerts, instructions, etc." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/communication-category" />
+        <strength value="required" />
+        <description value="The overall outcome of the call" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-TreatmentType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3432,7 +4220,7 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
@@ -3479,6 +4267,304 @@
       <mapping>
         <identity value="orim" />
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
+      </mapping>
+    </element>
+    <element id="Communication.category.coding.id">
+      <path value="Communication.category.coding.id" />
+      <representation value="xmlAttr" />
+      <short value="Unique id for inter-element referencing" />
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string" />
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Communication.category.coding.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.category.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.category.coding.system">
+      <path value="Communication.category.coding.system" />
+      <short value="Identity of the terminology system" />
+      <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
+      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." />
+      <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.system" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-TreatmentType" />
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.3" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystem" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
+      </mapping>
+    </element>
+    <element id="Communication.category.coding.version">
+      <path value="Communication.category.coding.version" />
+      <short value="Version of the system - if relevant" />
+      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
+      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.version" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.7" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystemVersion" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
+      </mapping>
+    </element>
+    <element id="Communication.category.coding.code">
+      <path value="Communication.category.coding.code" />
+      <short value="Symbol in syntax defined by the system" />
+      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
+      <requirements value="Need to refer to a particular code in the system." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.code" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./code" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
+      </mapping>
+    </element>
+    <element id="Communication.category.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Communication.category.coding.display" />
+      <short value="Representation defined by the system" />
+      <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
+      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.display" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.2 - but note this is not well followed" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CV.displayName" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
+      </mapping>
+    </element>
+    <element id="Communication.category.coding.userSelected">
+      <path value="Communication.category.coding.userSelected" />
+      <short value="If this coding was chosen directly by the user" />
+      <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
+      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
+      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.userSelected" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="boolean" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="Sometimes implied by being first" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CD.codingRationale" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
     <element id="Communication.category.text">
@@ -3664,7 +4750,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4223,7 +5309,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4288,7 +5374,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4445,7 +5531,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -4995,7 +6081,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5060,7 +6146,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5158,7 +6244,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5713,7 +6799,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5778,7 +6864,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5956,7 +7042,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -6510,7 +7596,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6575,7 +7661,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6679,7 +7765,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -7233,7 +8319,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7298,7 +8384,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -7370,8 +8456,8 @@
       <short value="Indication for message" />
       <definition value="The reason or justification for the communication." />
       <comment value="Textual reasons can be captured using reasonCode.text." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Communication.reasonCode" />
         <min value="0" />
@@ -7391,12 +8477,9 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationReason" />
-        </extension>
-        <strength value="example" />
-        <description value="Codes for describing reasons for the occurrence of a communication." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/clinical-findings" />
+        <strength value="required" />
+        <description value="The initial chief complaint" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ChiefComplaint" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7425,6 +8508,491 @@
       <mapping>
         <identity value="rim" />
         <map value=".reasonCode" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.id">
+      <path value="Communication.reasonCode.id" />
+      <representation value="xmlAttr" />
+      <short value="Unique id for inter-element referencing" />
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string" />
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.reasonCode.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.reasonCode.coding" />
+      <short value="Code defined by a terminology system" />
+      <definition value="A reference to a code defined by a terminology system." />
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
+      <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="CodeableConcept.coding" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Coding" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CV" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.1-8, C*E.10-22" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="union(., ./translation)" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding.id">
+      <path value="Communication.reasonCode.coding.id" />
+      <representation value="xmlAttr" />
+      <short value="Unique id for inter-element referencing" />
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string" />
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding.extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.reasonCode.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding.system">
+      <path value="Communication.reasonCode.coding.system" />
+      <short value="Identity of the terminology system" />
+      <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
+      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." />
+      <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.system" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-ChiefComplaint" />
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.3" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystem" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding.version">
+      <path value="Communication.reasonCode.coding.version" />
+      <short value="Version of the system - if relevant" />
+      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
+      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.version" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.7" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystemVersion" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding.code">
+      <path value="Communication.reasonCode.coding.code" />
+      <short value="Symbol in syntax defined by the system" />
+      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
+      <requirements value="Need to refer to a particular code in the system." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.code" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./code" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Communication.reasonCode.coding.display" />
+      <short value="Representation defined by the system" />
+      <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
+      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Coding.display" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.2 - but note this is not well followed" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CV.displayName" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.coding.userSelected">
+      <path value="Communication.reasonCode.coding.userSelected" />
+      <short value="If this coding was chosen directly by the user" />
+      <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
+      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
+      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.userSelected" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="boolean" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="Sometimes implied by being first" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CD.codingRationale" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
+      </mapping>
+    </element>
+    <element id="Communication.reasonCode.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Communication.reasonCode.text" />
+      <short value="Plain text representation of the concept" />
+      <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." />
+      <comment value="Very often the text is the same as a displayName of one of the codings." />
+      <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="CodeableConcept.text" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.9. But note many systems use C*E.2 for this" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./originalText[mediaType/code=&quot;text/plain&quot;]/data" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" />
       </mapping>
     </element>
     <element id="Communication.reasonReference">
@@ -7467,7 +9035,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8026,7 +9594,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8091,7 +9659,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8526,7 +10094,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -8641,6 +10209,66 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime" />
       </type>
     </element>
+    <element id="Communication.extension:aDSCat1EarlyPrediction">
+      <path value="Communication.extension" />
+      <sliceName value="aDSCat1EarlyPrediction" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-Cat1EarlyPrediction" />
+      </type>
+    </element>
+    <element id="Communication.extension:aDSCallOrigin">
+      <path value="Communication.extension" />
+      <sliceName value="aDSCallOrigin" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-CallOrigin" />
+      </type>
+    </element>
+    <element id="Communication.extension:aQIIncidentFlag">
+      <path value="Communication.extension" />
+      <sliceName value="aQIIncidentFlag" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-AQIIncidentFlag" />
+      </type>
+    </element>
+    <element id="Communication.extension:aDSResponseCategory">
+      <path value="Communication.extension" />
+      <sliceName value="aDSResponseCategory" />
+      <min value="2" />
+      <max value="2" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-ResponseCategory" />
+      </type>
+    </element>
+    <element id="Communication.extension:aQIResponseTime">
+      <path value="Communication.extension" />
+      <sliceName value="aQIResponseTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-AQIResponseTime" />
+      </type>
+    </element>
+    <element id="Communication.extension:111Flag">
+      <path value="Communication.extension" />
+      <sliceName value="111Flag" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-AmbulanceDataSet-111Flag" />
+      </type>
+    </element>
     <element id="Communication.statusReason">
       <path value="Communication.statusReason" />
       <short value="Codes for the reason why a call was stopped" />
@@ -8648,19 +10276,86 @@
       <binding>
         <strength value="required" />
         <description value="Codes for the reason why a call was stopped" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-StopCodes" />
       </binding>
+    </element>
+    <element id="Communication.statusReason.coding">
+      <path value="Communication.statusReason.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Communication.statusReason.coding.system">
+      <path value="Communication.statusReason.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-StopCodes" />
+    </element>
+    <element id="Communication.statusReason.coding.code">
+      <path value="Communication.statusReason.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Communication.statusReason.coding.display">
+      <path value="Communication.statusReason.coding.display" />
+      <min value="1" />
     </element>
     <element id="Communication.category">
       <path value="Communication.category" />
+      <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="The overall outcome of the call" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-TreatmentType" />
+      </binding>
     </element>
     <element id="Communication.category.coding">
       <path value="Communication.category.coding" />
+      <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Communication.category.coding.system">
+      <path value="Communication.category.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-TreatmentType" />
+    </element>
+    <element id="Communication.category.coding.code">
+      <path value="Communication.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Communication.category.coding.display">
+      <path value="Communication.category.coding.display" />
+      <min value="1" />
     </element>
     <element id="Communication.recipient">
       <path value="Communication.recipient" />
       <max value="1" />
+    </element>
+    <element id="Communication.reasonCode">
+      <path value="Communication.reasonCode" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="The initial chief complaint" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ChiefComplaint" />
+      </binding>
+    </element>
+    <element id="Communication.reasonCode.coding">
+      <path value="Communication.reasonCode.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Communication.reasonCode.coding.system">
+      <path value="Communication.reasonCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-ChiefComplaint" />
+    </element>
+    <element id="Communication.reasonCode.coding.code">
+      <path value="Communication.reasonCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Communication.reasonCode.coding.display">
+      <path value="Communication.reasonCode.coding.display" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

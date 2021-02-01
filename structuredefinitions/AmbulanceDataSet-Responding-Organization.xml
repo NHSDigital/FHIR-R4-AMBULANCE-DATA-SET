@@ -2245,7 +2245,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3457,7 +3457,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4565,7 +4565,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -5568,7 +5568,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6676,7 +6676,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -6864,8 +6864,8 @@
       <definition value="The kind(s) of organization that this is." />
       <comment value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes&#xA;&#xA;When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.&#xA;&#xA;We expect that some jurisdictions will profile this optionality to be a single cardinality." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Organization.type" />
         <min value="0" />
@@ -6885,12 +6885,9 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="OrganizationType" />
-        </extension>
-        <strength value="example" />
-        <description value="Used to categorize the organization." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/organization-type" />
+        <strength value="required" />
+        <description value="The type of organisation the ambulance response belongs to" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-RespondingOrganisationType" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7162,6 +7159,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-RespondingOrganisationType" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -8717,7 +8715,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -9825,7 +9823,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -11949,7 +11947,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -13057,7 +13055,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -13274,6 +13272,20 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="The type of organisation the ambulance response belongs to" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-RespondingOrganisationType" />
+      </binding>
+    </element>
+    <element id="Organization.type.coding.system">
+      <path value="Organization.type.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/Ambulance-RespondingOrganisationType" />
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
