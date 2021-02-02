@@ -3,8 +3,8 @@
   <id value="CodeSystem-AmbulanceDataSet-TriageCategory" />
   <url value="https://fhir.nhs.uk/CodeSystem/AmbulanceDataSet-TriageCategory" />
   <version value="2.0.0" />
-  <name value="AmbulanceDataSetTriageCategory" />
-  <title value="Ambulance Data Set Triage Category" />
+  <name value="CodeSystemAmbulanceDataSetTriageCategory" />
+  <title value="CodeSystem Ambulance Data Set Triage Category" />
   <status value="draft" />
   <date value="2021-12-26T00:00:00+00:00" />
   <publisher value="NHS Digital" />

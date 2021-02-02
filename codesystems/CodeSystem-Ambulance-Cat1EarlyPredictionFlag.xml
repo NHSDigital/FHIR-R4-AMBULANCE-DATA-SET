@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-Cat1EarlyPredictionFlag"/>
+	<id value="CodeSystem-Ambulance-Cat1EarlyPredictionFlag"/>
 	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-Cat1EarlyPredictionFlag"/>
 	<version value="2.0.0"/>
-	<name value="AmbulanceCat1EarlyPredictionFlag"/>
-	<title value="Ambulance Cat 1 Early Prediction Flag"/>
+	<name value="CodeSystemAmbulanceCat1EarlyPredictionFlag"/>
+	<title value="CodeSystem Ambulance Cat 1 Early Prediction Flag"/>
 	<status value="draft"/>
 	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-CallOrigin"/>
+	<id value="CodeSystem-Ambulance-CallOrigin"/>
 	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-CallOrigin"/>
 	<version value="2.0.0"/>
-	<name value="AmbulanceCallOrigin"/>
-	<title value="Ambulance Call Origin"/>
+	<name value="CodeSystemAmbulanceCallOrigin"/>
+	<title value="CodeSystem Ambulance Call Origin"/>
 	<status value="draft"/>
 	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>

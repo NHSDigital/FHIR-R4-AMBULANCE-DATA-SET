@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-PathwaysTriageDisposition"/>
+	<id value="CodeSystem-Ambulance-PathwaysTriageDisposition"/>
 	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-PathwaysTriageDisposition"/>
 	<version value="2.0.0"/>
-	<name value="AmbulancePathwaysTriageDisposition"/>
-	<title value="Ambulance Pathways Triage Disposition"/>
+	<name value="CodeSystemAmbulancePathwaysTriageDisposition"/>
+	<title value="CodeSystem Ambulance Pathways Triage Disposition"/>
 	<status value="draft"/>
 	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
