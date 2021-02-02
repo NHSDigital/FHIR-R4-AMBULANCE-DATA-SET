@@ -3,8 +3,8 @@
 	<id value="CodeSystem-AmbulanceDataSet-BundleType"/>
 	<url value="https://fhir.nhs.uk/CodeSystem/AmbulanceDataSet-BundleType"/>
 	<version value="2.0.0"/>
-	<name value="AmbulanceDataSetBundleType"/>
-	<title value="Ambulance Data Set Bundle Type"/>
+	<name value="CodeSystemAmbulanceDataSetBundleType"/>
+	<title value="CodeSystem Ambulance Data Set Bundle Type"/>
 	<status value="draft"/>
 	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>

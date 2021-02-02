@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-ResponseType"/>
+	<id value="CodeSystem-Ambulance-ResponseType"/>
 	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ResponseType"/>
 	<version value="2.0.0"/>
-	<name value="AmbulanceResponseType"/>
-	<title value="Ambulance Response Type"/>
+	<name value="CodeSystemAmbulanceResponseType"/>
+	<title value="CodeSystem Ambulance Response Type"/>
 	<status value="draft"/>
 	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>

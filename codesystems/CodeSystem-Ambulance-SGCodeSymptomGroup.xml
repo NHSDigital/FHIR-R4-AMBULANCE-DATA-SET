@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="Ambulance-SGCodeSymptomGroup" />
+  <id value="CodeSystem-Ambulance-SGCodeSymptomGroup" />
   <url value="https://fhir.nhs.uk/CodeSystem/Ambulance-SGCodeSymptomGroup" />
   <version value="2.0.0" />
-  <name value="AmbulanceSGCodeSymptomGroup" />
-  <title value="Ambulance SG Code Symptom Group" />
+  <name value="CodeSystemAmbulanceSGCodeSymptomGroup" />
+  <title value="CodeSystem Ambulance SG Code Symptom Group" />
   <status value="draft" />
   <date value="2021-12-26T00:00:00+00:00" />
   <publisher value="NHS Digital" />
