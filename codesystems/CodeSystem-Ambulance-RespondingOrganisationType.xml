@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="Ambulance-RespondingOrganisationType" />
+  <id value="CodeSystem-Ambulance-RespondingOrganisationType" />
   <url value="https://fhir.nhs.uk/CodeSystem/Ambulance-RespondingOrganisationType" />
   <version value="2.0.0" />
-  <name value="AmbulanceRespondingOrganisationType" />
-  <title value="Ambulance Responding Organisation Type" />
+  <name value="CodeSystemAmbulanceRespondingOrganisationType" />
+  <title value="CodeSystem Ambulance Responding Organisation Type" />
   <status value="draft" />
   <date value="2021-01-14T00:00:00+00:00" />
   <publisher value="NHS Digital" />

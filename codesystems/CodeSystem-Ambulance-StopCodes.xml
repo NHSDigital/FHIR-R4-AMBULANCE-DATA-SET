@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-StopCodes"/>
+	<id value="CodeSystem-Ambulance-StopCodes"/>
 	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-StopCodes"/>
 	<version value="2.0.0"/>
-	<name value="AmbulanceStopCodes"/>
-	<title value="Ambulance Stop Codes"/>
+	<name value="CodeSystemAmbulanceStopCodes"/>
+	<title value="CodeSystem Ambulance Stop Codes"/>
 	<status value="draft"/>
 	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>

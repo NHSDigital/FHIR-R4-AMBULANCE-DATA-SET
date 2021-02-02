@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="Ambulance-ResponseCategory"/>
+	<id value="CodeSystem-Ambulance-ResponseCategory"/>
 	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ResponseCategory"/>
 	<version value="2.0.0"/>
-	<name value="AmbulanceResponseCategory"/>
-	<title value="Ambulance Response Category"/>
+	<name value="CodeSystem-AmbulanceResponseCategory"/>
+	<title value="CodeSystem Ambulance Response Category"/>
 	<status value="draft"/>
 	<date value="2021-01-26T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
