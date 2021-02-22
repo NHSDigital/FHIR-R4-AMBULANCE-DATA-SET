@@ -2640,7 +2640,7 @@
       <definition value="The organization responsible for the provisioning and upkeep of the location." />
       <comment value="This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource." />
       <requirements value="Need to know who manages the location." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Location.managingOrganization" />
@@ -5154,6 +5154,7 @@
     </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
