@@ -171,7 +171,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -364,7 +364,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -764,6 +764,7 @@
       <path value="Extension.extension" />
       <sliceName value="cat1EarlyPredictionFlag" />
       <short value="Identifier for calls that were early identified as a Category 1 call" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:cat1EarlyPredictionFlag.url">
@@ -787,6 +788,7 @@
       <path value="Extension.extension" />
       <sliceName value="timeCat1EarlyPredictionFlagEstablished" />
       <short value="The time that the category 1 was early identified (only applicable to category 1 incidents)" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:timeCat1EarlyPredictionFlagEstablished.url">
