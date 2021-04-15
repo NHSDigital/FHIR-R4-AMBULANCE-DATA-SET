@@ -4,8 +4,7 @@
   "description": "Put a description here",
   "author": null,
   "dependencies": {
-  	"UK.Core.r4": "1.4.0",
-    "UK.Core.r4.v2": "2.0.6"
+    "UK.Core.r4.v2": "2.0.8"
   },
   "fhirVersions": [
     "4.0.1"
