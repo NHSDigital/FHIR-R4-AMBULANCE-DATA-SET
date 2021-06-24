@@ -298,6 +298,19 @@
 				<basedOn>
 					<reference value="urn:uuid:c40eb149-ee06-4be3-abe6-e1c458efa55e"/>
 				</basedOn>
+				<!--PractitionerRoleLink to the PractitionerRole that has the highest skill level-->
+				<participant>
+					<type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+                            <code value="ATND" />
+                            <display value="Attender" />
+                        </coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:6b6cb092-6af5-4154-8d99-002614ec444e"/>
+					</individual>
+				</participant>				
 				<period>
 					<!-- ## Time Resource Allocated (ADS38) ## -->
 					<start value="2020-06-29T15:36:44+00:00"/>
@@ -352,6 +365,19 @@
 				<basedOn>
 					<reference value="urn:uuid:c40eb149-ee06-4be3-abe6-e1c458efa55e"/>
 				</basedOn>
+				<!--PractitionerRoleLink to the PractitionerRole that has the highest skill level-->
+				<participant>
+					<type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+                            <code value="ATND" />
+                            <display value="Attender" />
+                        </coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:6b6cb092-6af5-4154-8d99-002614ec444e"/>
+					</individual>
+				</participant>					
 				<period>
 					<!-- ## Time Resource Allocated (ADS38) ## -->
 					<start value="2020-06-29T15:36:44+00:00"/>
@@ -430,6 +456,19 @@
 				<basedOn>
 					<reference value="urn:uuid:c40eb149-ee06-4be3-abe6-e1c458efa55e"/>
 				</basedOn>
+				<!--PractitionerRoleLink to the PractitionerRole that has the highest skill level-->
+				<participant>
+					<type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+                            <code value="ATND" />
+                            <display value="Attender" />
+                        </coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:0d743079-780c-40f3-8a52-be15f746b484"/>
+					</individual>
+				</participant>					
 				<period>
 					<!-- ## Time Resource Allocated (ADS38) ## -->
 					<start value="2020-06-29T15:42:03+00:00"/>
