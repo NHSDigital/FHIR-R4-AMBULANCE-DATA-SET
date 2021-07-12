@@ -18,7 +18,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication"/>
 				</meta>
-				<!-- ## Time Call Answered (ADS24) ## -->
+				<!-- ## Time Call Ended (ADS24) ## -->
 				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
